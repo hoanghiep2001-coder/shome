@@ -1,0 +1,55 @@
+.footer {
+  background-color: $color-background-footer;
+  color: $color-text-blue;
+  padding: 80px 0 64px;
+  .footer__aboutUs {
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+    .footer__aboutUs-item {
+      &:last-child {
+        .footer__aboutUs-desc {
+          font-family: "BeVietnamPro-ThinItalic";
+        }
+      }
+    }
+    .footer__aboutUs-title {
+      font-size: 18px;
+      font-family: "BeVietnamPro-SemiBold";
+      margin-bottom: 18px;
+    }
+    .footer__aboutUs-desc {
+      font-size: 16px;
+      font-family: "BeVietnamPro-Thin";
+      margin-bottom: 16px;
+    }
+
+    .footer__aboutUs-list {
+      li {
+        background-color: $color-background-footer;
+        border: none;
+        outline: none;
+        padding: 4px 0;
+        .footer__aboutUs-link {
+          color: $color-text-blue;
+          font-size: 14px;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            color: $color-title-blue;
+          }
+        }
+      }
+    }
+  }
+  .footer__companyInfo {
+    padding: 26px 0 0;
+    .footer__companyInfo-item {
+      .footer__companyInfo-title {
+        font-size: 16px;
+        margin-bottom: 11px;
+      }
+      .footer__companyInfo-desc {
+        font-size: 14px;
+      }
+    }
+  }
+}

@@ -1,0 +1,464 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  outline: 0;
+}
+
+.title-section {
+  position: relative;
+  display: inline-block;
+  color: #0c1c56;
+  letter-spacing: 1.3px;
+}
+.title-section::after {
+  position: absolute;
+  bottom: -54px;
+  height: 2px;
+  background-color: #ffb923;
+  width: 60%;
+  content: "";
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+a:hover {
+  color: #137cc9;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.primary-button {
+  background-color: #eabd4d;
+  border-radius: 28px !important;
+  outline: none;
+  padding: 10px 20px;
+}
+
+.button-hover {
+  color: #1c1818;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+.button-hover:hover {
+  color: #fff;
+  background-color: #eabd4d;
+  border: 1px solid #eabd4d;
+}
+
+.header {
+  background-color: #fff;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.2);
+}
+.header .header__container .header__homePage .icon-LOGO_demo {
+  width: 175px;
+  color: #eabd4d;
+}
+.header .header__container .header__nav-item.user-action:last-child .header__nav-link {
+  border: 1px solid #1c1818;
+  color: #1c1818;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+.header .header__container .header__nav-item.user-action:last-child .header__nav-link:hover {
+  color: #fff;
+  background-color: #eabd4d;
+  border: 1px solid #eabd4d;
+}
+.header .header__container .header__nav-link {
+  color: #1c1818;
+  font-family: "BeVietnamPro-SemiBold";
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.header .header__container .header__nav-link:hover {
+  color: #137cc9;
+}
+.header .header__container .header__user {
+  margin-left: 8px;
+}
+.header .header__container .header__user .header__user-link .header__user-img {
+  width: 50px;
+  height: 50px;
+}
+.header.is-sticky {
+  padding: 0;
+}
+
+.body {
+  padding-top: 120px;
+  position: relative;
+}
+.body .body__hero {
+  background: url(../image/thumb/Banner_TrangChu.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.body .body__hero .body__hero-logo {
+  width: 100px;
+  height: 100px;
+}
+.body .body__hero .body__hero-slogan {
+  color: #fff;
+  font-size: 50px;
+  margin: 10px 0;
+  max-width: 60%;
+  line-height: 1.3;
+  font-family: "BeVietnamPro-Bold";
+  z-index: 1;
+  position: relative;
+}
+.body .body__hero .body__hero-desc {
+  color: #fff;
+  font-size: 16px;
+  margin: 20px 0px 30px;
+  max-width: 60%;
+  position: relative;
+  line-height: 1.7;
+  z-index: 1;
+}
+.body .body__filter {
+  height: 154px;
+  position: absolute;
+  top: 546px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.65);
+  border-radius: 28px;
+}
+.body .body__filter .body__filter-form {
+  margin-top: 48px;
+  max-height: 67px;
+  border: 1px solid #aeaeb2;
+  background-color: #fff;
+  border-radius: 28px;
+  padding: 0 8px;
+}
+.body .body__filter .body__filter-form .filter__search {
+  padding-left: 12px;
+}
+.body .body__filter .body__filter-form .filter__search .filter__search-icon {
+  font-size: 24px;
+}
+.body .body__filter .body__filter-form .filter__search .filter__search-input {
+  border: none;
+  outline: none;
+  color: #3c7878;
+}
+.body .body__filter .body__filter-form .filter__search .filter__search-input::placeholder {
+  color: #3c7878;
+}
+.body .body__filter .body__filter-form .filter__nav .filter__nav-button {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+}
+.body .body__filter .body__filter-form .filter__nav .filter__nav-button.Search-button {
+  background-color: #eabd4d;
+  border-radius: 28px;
+}
+.body .body__filter .body__filter-form .filter__nav .filter__nav-button.Search-button::before {
+  display: none;
+}
+.body .body__filter .body__filter-form .filter__nav .filter__nav-button::after {
+  display: none;
+}
+.body .body__filter .body__filter-form .filter__nav .filter__nav-button::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 1px;
+  background-color: rgb(207, 207, 207);
+}
+.body .body__filter .body__filter-form .filter__nav .filter__nav-button .arrowDown-icon {
+  margin-left: 4px;
+}
+.body .body__filter .body__filter-form .filter__nav .filter__nav-button .Search-button-icon {
+  color: #fff;
+}
+.body .body__listRoom {
+  background-color: #f5f1e6;
+  padding: 150px 0 100px;
+}
+.body .body__listRoom .body__listRoom-title {
+  text-align: center;
+}
+.body .body__listRoom .listRoom__item {
+  margin-top: 28px;
+  background-color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.body .body__listRoom .listRoom__item:hover .listRoom__item-wrapper .listRoom__item-img {
+  transform: scale(1.1);
+}
+.body .body__listRoom .listRoom__item .listRoom__item-wrapper {
+  overflow: hidden;
+}
+.body .body__listRoom .listRoom__item .listRoom__item-wrapper .listRoom__item-img {
+  width: 100%;
+  border-start-start-radius: 20px;
+  border-start-end-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.body .body__listRoom .listRoom__item .listRoom__item-content {
+  padding: 20px 12px;
+}
+.body .body__listRoom .listRoom__item .listRoom__item-content .listRoom__content-place {
+  color: #7c7878;
+  font-size: 16px;
+}
+.body .body__listRoom .listRoom__item .listRoom__item-content .listRoom__content-title {
+  font-size: 16px;
+  color: #0c1c56;
+  font-family: "BeVietnamPro-SemiBold";
+}
+.body .body__listRoom .listRoom__item .listRoom__item-content .listRoom__content-address {
+  color: #7c7878;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.body .body__listRoom .listRoom__item .listRoom__item-content .listRoom__item-price {
+  font-family: "BeVietnamPro-SemiBold";
+  color: #0c1c56;
+  font-size: 18px;
+}
+.body .body__listRoom .listRoom__item .listRoom__item-content .listRoom__item-mark {
+  font-family: "BeVietnamPro-SemiBold";
+  color: #0c1c56;
+  font-size: 18px;
+}
+.body .body__aboutUs {
+  padding: 40px 0 70px;
+}
+.body .body__aboutUs .aboutUs__title {
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+}
+.body .body__aboutUs .row .aboutUs__item {
+  margin-top: 30px;
+  text-align: center;
+}
+.body .body__aboutUs .row .aboutUs__item .aboutUs__item-title {
+  margin: 16px 0;
+  font-size: 16px;
+  font-family: "BeVietnamPro-SemiBold";
+}
+.body .body__aboutUs .row .aboutUs__item .aboutUs__item-desc {
+  font-size: 16px;
+}
+.body .body__subAboutUs {
+  background-color: #f6e9d5;
+  padding: 62px 0 50px;
+}
+.body .body__subAboutUs .body__subAboutUs-desc .body__subAboutUs-title {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.body .body__subAboutUs .body__subAboutUs-desc .body__subAboutUs-content {
+  text-indent: 70px;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 1.2px;
+}
+.body .body__subAboutUs .body__subAboutUs-desc .body__subAboutUs-content:last-child {
+  margin-bottom: 0;
+}
+.body .body__convenient {
+  background-color: #f5f1e6;
+  padding: 62px 0 50px;
+}
+.body .body__convenient .body__convenient-title {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.body .body__convenient .body__convenient-content {
+  display: flex;
+  background-color: #fff;
+  border: 1.5px solid #dfbe8c;
+  padding: 30px 4px;
+  border-radius: 4px;
+  position: relative;
+  z-index: 1;
+}
+.body .body__convenient .body__convenient-content::after {
+  position: absolute;
+  content: "";
+  left: -10px;
+  top: -10px;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: -1;
+}
+.body .body__convenient .body__convenient-content .convenient__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.body .body__convenient .body__convenient-content .convenient__item:nth-child(5) .convenient__item-icon {
+  width: 40px;
+  height: 40px;
+}
+.body .body__convenient .body__convenient-content .convenient__item:last-child .convenient__item-icon {
+  font-size: 32px;
+}
+.body .body__convenient .body__convenient-content .convenient__item:nth-child(3) .convenient__item-icon {
+  font-size: 40px;
+}
+.body .body__convenient .body__convenient-content .convenient__item:nth-child(1)::after {
+  display: none;
+}
+.body .body__convenient .body__convenient-content .convenient__item::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 1px;
+  background-color: rgb(207, 207, 207);
+}
+.body .body__convenient .body__convenient-content .convenient__item .convenient__item-icon {
+  font-size: 46px;
+  margin-right: 12px;
+  color: #0c1c56;
+}
+.body .body__convenient .body__convenient-content .convenient__item .convenient__item-title {
+  font-size: 14px;
+  margin-bottom: 0;
+  color: #0c1c56;
+  font-family: "BeVietnamPro-SemiBold";
+}
+.body .body__service {
+  background: url("../image/thumb/Nen_LienHe.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+.body .body__service .body__service-wrapper {
+  padding: 140px 0;
+}
+.body .body__service .body__service-wrapper .body__service-row {
+  background-color: rgba(52, 51, 51, 0.5);
+  padding: 40px 20px;
+  align-items: center;
+}
+.body .body__service .body__service-wrapper .body__service-row .body__service-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.body .body__service .body__service-wrapper .body__service-row .body__service-actions .service_actions-icon {
+  font-size: 26px;
+  cursor: pointer;
+  color: #fff;
+}
+.body .body__service .body__service-wrapper .body__service-row .body__service-actions .service_actions-icon:last-child {
+  margin-left: 12px;
+}
+.body .body__service .body__service-wrapper .service__warpper {
+  margin-top: 20px;
+}
+.body .body__service .body__service-wrapper .service__warpper h3 {
+  font-size: 16px;
+}
+.body .body__service .body__service-wrapper .service__warpper p {
+  font-size: 14px;
+}
+.body .body__service .body__service-wrapper .service__title {
+  font-family: "BeVietnamPro-SemiBold";
+}
+.body .body__service .body__service-wrapper .service__form-control {
+  padding: 8px 12px;
+  border: none;
+  border-bottom: 1px solid #888;
+  outline: none;
+  border-radius: 0px;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+.body .body__service .body__service-wrapper .service__form-control::placeholder {
+  color: #fff;
+}
+.body .body__service .body__service-wrapper .service__form-control:focus {
+  border: none;
+  border-bottom: 1px solid #888;
+  outline: none;
+  box-shadow: none;
+}
+
+.footer {
+  background-color: #f6e9d5;
+  color: #0c163b;
+  padding: 80px 0 64px;
+}
+.footer .footer__aboutUs {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ccc;
+}
+.footer .footer__aboutUs .footer__aboutUs-item:last-child .footer__aboutUs-desc {
+  font-family: "BeVietnamPro-ThinItalic";
+}
+.footer .footer__aboutUs .footer__aboutUs-title {
+  font-size: 18px;
+  font-family: "BeVietnamPro-SemiBold";
+  margin-bottom: 18px;
+}
+.footer .footer__aboutUs .footer__aboutUs-desc {
+  font-size: 16px;
+  font-family: "BeVietnamPro-Thin";
+  margin-bottom: 16px;
+}
+.footer .footer__aboutUs .footer__aboutUs-list li {
+  background-color: #f6e9d5;
+  border: none;
+  outline: none;
+  padding: 4px 0;
+}
+.footer .footer__aboutUs .footer__aboutUs-list li .footer__aboutUs-link {
+  color: #0c163b;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+}
+.footer .footer__aboutUs .footer__aboutUs-list li .footer__aboutUs-link:hover {
+  color: #137cc9;
+}
+.footer .footer__companyInfo {
+  padding: 26px 0 0;
+}
+.footer .footer__companyInfo .footer__companyInfo-item .footer__companyInfo-title {
+  font-size: 16px;
+  margin-bottom: 11px;
+}
+.footer .footer__companyInfo .footer__companyInfo-item .footer__companyInfo-desc {
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,362 @@
+.body {
+  padding-top: 120px;
+  position: relative;
+  .body__hero {
+    background: url(../image/thumb/Banner_TrangChu.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    // &::after {
+    //   position: absolute;
+    //   content: "";
+    //   width: 100%;
+    //   height: 100%;
+    //   top: 0;
+    //   left: 0;
+    //   // background-color: rgba(77, 100, 133, 0.294);
+    // }
+    .body__hero-logo {
+      width: 100px;
+      height: 100px;
+    }
+    .body__hero-slogan {
+      color: $color-white;
+      font-size: 50px;
+      margin: 10px 0;
+      max-width: 60%;
+      line-height: 1.3;
+      font-family: "BeVietnamPro-Bold";
+      // font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      z-index: 1;
+      position: relative;
+    }
+    .body__hero-desc {
+      color: $color-white;
+      font-size: 16px;
+      margin: 20px 0px 30px;
+      max-width: 60%;
+      position: relative;
+      line-height: 1.7;
+      z-index: 1;
+    }
+  }
+  .body__filter {
+    height: 154px;
+    position: absolute;
+    top: 546px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.65);
+    border-radius: 28px;
+    .body__filter-form {
+      margin-top: 48px;
+      max-height: 67px;
+      border: 1px solid #aeaeb2;
+      background-color: $color-white;
+      border-radius: 28px;
+      padding: 0 8px;
+      .filter__search {
+        padding-left: 12px;
+        .filter__search-icon {
+          font-size: 24px;
+        }
+        .filter__search-input {
+          border: none;
+          outline: none;
+          color: $color-placeholder;
+          &::placeholder {
+            color: $color-placeholder;
+          }
+        }
+      }
+      .filter__nav {
+        .filter__nav-button {
+          border: none;
+          outline: none;
+          padding: 10px 20px;
+          &.Search-button {
+            background-color: $color-button;
+            border-radius: 28px;
+            &::before {
+              display: none;
+            }
+          }
+          &::after {
+            display: none;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            top: 0;
+            left: 0;
+            width: 1px;
+            background-color: rgb(207, 207, 207);
+          }
+          .arrowDown-icon {
+            margin-left: 4px;
+          }
+          .Search-button-icon {
+            color: $color-white;
+          }
+        }
+      }
+    }
+  }
+  .body__listRoom {
+    background-color: $color-background;
+    padding: 150px 0 100px;
+    .body__listRoom-title {
+      text-align: center;
+    }
+    .listRoom__item {
+      margin-top: 28px;
+      background-color: $color-white;
+      border-radius: 20px;
+      cursor: pointer;
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        .listRoom__item-wrapper {
+          .listRoom__item-img {
+            transform: scale(1.1);
+          }
+        }
+      }
+      .listRoom__item-wrapper {
+        overflow: hidden;
+        .listRoom__item-img {
+          width: 100%;
+          border-start-start-radius: 20px;
+          border-start-end-radius: 20px;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+      .listRoom__item-content {
+        padding: 20px 12px;
+        .listRoom__content-place {
+          color: $color-title-grey;
+          font-size: 16px;
+        }
+        .listRoom__content-title {
+          font-size: 16px;
+          color: $color-title;
+          font-family: "BeVietnamPro-SemiBold";
+        }
+        .listRoom__content-address {
+          color: $color-title-grey;
+          font-size: 14px;
+          margin-bottom: 12px;
+        }
+        .listRoom__item-price {
+          font-family: "BeVietnamPro-SemiBold";
+          color: $color-title;
+          font-size: 18px;
+        }
+        .listRoom__item-mark {
+          font-family: "BeVietnamPro-SemiBold";
+          color: $color-title;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .body__aboutUs {
+    padding: 40px 0 70px;
+    .aboutUs__title {
+      font-size: 30px;
+      text-align: center;
+      position: relative;
+      // &::after {
+      //     position: absolute;
+      //     content: "";
+      //     bottom: 0;
+      //     left: 0;
+      //     width: 50%;
+      //     height: 2px;
+      //     background-color: ;
+      // }
+    }
+    .row {
+      .aboutUs__item {
+        margin-top: 30px;
+        text-align: center;
+        .aboutUs__item-image {
+        }
+
+        .aboutUs__item-title {
+          margin: 16px 0;
+          font-size: 16px;
+          font-family: "BeVietnamPro-SemiBold";
+        }
+
+        .aboutUs__item-desc {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .body__subAboutUs {
+    background-color: $color-background-footer;
+    padding: 62px 0 50px;
+    .body__subAboutUs-desc {
+      .body__subAboutUs-title {
+        text-align: center;
+        margin-bottom: 100px;
+      }
+      .body__subAboutUs-content {
+        text-indent: 70px;
+        text-align: justify;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 1.2px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .body__convenient {
+    background-color: $color-background;
+    padding: 62px 0 50px;
+    .body__convenient-title {
+      text-align: center;
+
+      margin-bottom: 100px;
+    }
+    .body__convenient-content {
+      display: flex;
+      background-color: $color-white;
+      border: 1.5px solid $color-border-main;
+      padding: 30px 4px;
+      border-radius: 4px;
+      position: relative;
+      z-index: 1;
+      &::after {
+        position: absolute;
+        content: "";
+        left: -10px;
+        top: -10px;
+        width: calc(100% + 20px);
+        height: calc(100% + 20px);
+        background-color: rgba(255, 255, 255, 0.6);
+        z-index: -1;
+      }
+      .convenient__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        &:nth-child(5) {
+          .convenient__item-icon {
+            width: 40px;
+            height: 40px;
+          }
+        }
+        &:last-child {
+          .convenient__item-icon {
+            font-size: 32px;
+          }
+        }
+        &:nth-child(3) {
+          .convenient__item-icon {
+            font-size: 40px;
+          }
+        }
+        &:nth-child(1) {
+          &::after {
+            display: none;
+          }
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          height: 100%;
+          top: 0;
+          left: 0;
+          width: 1px;
+          background-color: rgb(207, 207, 207);
+        }
+
+        .convenient__item-icon {
+          font-size: 46px;
+          margin-right: 12px;
+          color: $color-title;
+        }
+        .convenient__item-title {
+          font-size: 14px;
+          margin-bottom: 0;
+          color: $color-title;
+          font-family: "BeVietnamPro-SemiBold";
+          // text-align: ju;
+        }
+      }
+    }
+  }
+  .body__service {
+    background: url("../image/thumb/Nen_LienHe.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $color-white;
+    .body__service-wrapper {
+      padding: 140px 0;
+
+      .body__service-row {
+        background-color: rgb(52 51 51 / 50%);
+        padding: 40px 20px;
+        align-items: center;
+
+        .body__service-actions {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 20px;
+          .service_actions-contact {
+          }
+          .service_actions-icon {
+            font-size: 26px;
+            cursor: pointer;
+            color: $color-white;
+            &:last-child {
+              margin-left: 12px;
+            }
+          }
+        }
+      }
+
+      .service__warpper {
+        margin-top: 20px;
+        h3 {
+          font-size: 16px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+
+      .service__title {
+        font-family: "BeVietnamPro-SemiBold";
+      }
+      .service__form-control {
+        padding: 8px 12px;
+        border: none;
+        border-bottom: 1px solid $color-text;
+        outline: none;
+        border-radius: 0px;
+        background-color: rgba(255, 255, 255, 0.15);
+        color: $color-white;
+        &::placeholder {
+          color: $color-white;
+        }
+        &:focus {
+          border: none;
+          border-bottom: 1px solid $color-text;
+          outline: none;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}

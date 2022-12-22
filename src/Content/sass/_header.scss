@@ -1,0 +1,59 @@
+.header {
+  background-color: $color-white;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 5px 0px rgb(0 0 0 / 20%);
+  .header__container {
+    .header__homePage {
+      .icon-LOGO_demo {
+        // font-size: 80px;
+        width: $logo-default-width;
+        color: $color-button;
+      }
+    }
+    .header__nav-item {
+      &.user-action:last-child {
+        .header__nav-link {
+          border: 1px solid $color-title-black;
+          color: $color-title-black;
+          border-radius: 8px;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            color: $color-white;
+            background-color: $color-button;
+            border: 1px solid $color-button;
+          }
+        }
+      }
+    }
+    .header__nav-link {
+      color: $color-title-black;
+      font-family: "BeVietnamPro-SemiBold";
+      // font-family: 'Segoe UI';
+      font-size: 14px;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        color: $color-title-blue;
+      }
+    }
+
+    .header__user {
+      margin-left: 8px;
+      .header__user-link {
+        .header__user-img {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+  &.is-sticky {
+    padding: 0;
+  }
+}

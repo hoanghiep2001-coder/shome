@@ -1,0 +1,291 @@
+const APIs = {
+  headerAPIs: {
+    Navigation: [
+      {
+        Menu: [
+          {
+            id: 1,
+            content: "Trang Chủ",
+            path: "/",
+          },
+          {
+            id: 2,
+            content: "Tìm Thuê",
+            path: "/filter",
+          },
+          {
+            id: 3,
+            content: "Dịch Vụ Sửa Chữa",
+            path: "#",
+          },
+        ],
+        UserActions: [
+          {
+            id: 1,
+            elementType: "a",
+            content: "Đăng Tin Miễn Phí",
+            path: "#",
+          },
+        ],
+      },
+    ],
+  },
+  bodyAPIs: {
+    hero: {
+      slogan: "TÌM NHANH, KIẾM DỄ TRỌ MỚI TOÀN QUỐC",
+      description:
+        "Tromoi.com - Trang thông tin tìm và cho thuê phòng trọ nhanh chóng, hiệu quả số với hơn 500 tin đăng mới và 30.000 lượt xem mỗi ngày.",
+      banner: "../Content/thumb/bg_head.jpg",
+    },
+    filter: [
+      {
+        id: 1,
+        title: "Khu vực",
+        dropDown: [
+          {
+            id: 1,
+            content: "Hoàng Mai",
+            fakeId: 10,
+          },
+          {
+            id: 2,
+            content: "Vĩnh Tuy",
+            fakeId: 11,
+          },
+        ],
+      },
+      {
+        id: 2,
+        title: "Loại",
+        dropDown: [
+          {
+            id: 1,
+            content: "Hoàng Mai",
+            fakeId: 12,
+          },
+          {
+            id: 2,
+            content: "Hoàng Mai",
+            fakeId: 13,
+          },
+        ],
+      },
+      {
+        id: 3,
+        title: "Giá",
+        dropDown: [
+          {
+            id: 1,
+            content: "Hoàng Mai",
+            fakeId: 14,
+          },
+          {
+            id: 2,
+            content: "Hoàng Mai",
+            fakeId: 15,
+          },
+        ],
+      },
+      {
+        id: 4,
+        title: "Lọc nâng cao",
+        dropDown: [
+          {
+            id: 1,
+            content: "Hoàng Mai",
+            fakeId: 16,
+          },
+          {
+            id: 1,
+            content: "Hoàng Mai",
+            fakeId: 17,
+          },
+        ],
+      },
+    ],
+    aboutUs: [
+      {
+        id: 1,
+        title: "CĂN HỘ",
+        content:
+          "Vệ sinh sạch sẽ, không gian thoáng mát, đầy đủ nội thất lắp đặt mới.",
+        image: "https://bandon.vn/images/icon-server-01.png",
+      },
+      {
+        id: 2,
+        title: "GIÁ ĐIỆN",
+        content:
+          'Người thuê phòng sẽ được "trả tiền điện" theo đúng "khung giá nhà nước".',
+        image: "https://bandon.vn/images/icon-server-02.png",
+      },
+      {
+        id: 3,
+        title: "NƯỚC SINH HOẠT",
+        content:
+          'Người thuê phòng không phải lo "thiếu nước sạch" hay "giá tiền nước cao".',
+        image: "https://bandon.vn/images/icon-server-03.png",
+      },
+      {
+        id: 4,
+        title: "AN NINH",
+        content:
+          'Hệ thống an ninh đảm bảo an toàn từ "camera giám sát" đến "bảo mật vân tay".',
+        image: "https://bandon.vn/images/icon-server-04.png",
+      },
+      {
+        id: 5,
+        title: "VĂN HÓA",
+        content:
+          "Nếp sống văn hóa lành mạnh, thân thiện & gần gũi trong khu nhà trọ.",
+        image: "https://bandon.vn/images/icon-server-05.png",
+      },
+      {
+        id: 6,
+        title: "HỖ TRỢ 24H",
+        content:
+          "Đội ngũ vận hành hỗ trợ 24h, xử lý mọi vấn đề cho người thuê phòng.",
+        image: "https://bandon.vn/images/icon-server-06.png",
+      },
+    ],
+    subAboutUs: {
+      descriptions: [
+        {
+          id: "aboutUsDesc1",
+          content:
+            "Chúng tôi là nhóm sinh viên nghiên cứu khoa học của trường Đại Học tại Hà Nội. Trải qua 4 năm học, là sinh viên chúng tôi nhận ra được những khó khăn, rủi ro tiềm ẩn khi đi thuê phòng trọ không chỉ của sinh viên mà còn là nỗi sợ với những người xa quê lên thành phố làm việc. Chính vì vậy, với những kiến thức mà thầy cô truyền đạt lại trong 4 năm sinh viên, chúng tôi đã cùng nhau xây dựng lên website Hỗ Trợ Tìm Kiếm Nhà Trọ giúp mọi người dễ dàng tìm kiếm cho mình nhà trọ phù hợp, tiện lợi và nhanh chóng nhất.",
+        },
+        {
+          id: "aboutUsDesc2",
+          content:
+            "Chúng tôi luôn sẵn sàng phục vụ nhu cầu 'tìm nhà trọ, tìm phòng trọ, chung cư mini, căn hộ mini' cho mọi khách hàng, với mong muốn 'Tạo dựng môi trường sống TỐT - Đảm bảo sự MINH BẠCH' cũng như QUYỀN LỢI cho người thuê phòng và cả cộng đồng.",
+        },
+      ],
+      utilities: [],
+    },
+    roomList: [
+      {
+        id: 1,
+        place: "Hà Nội",
+        title: "Phòng Trọ 25m2 Full Nội Thất Gần ĐH SPHN",
+        rating: 5,
+        address: "Ngõ 38, Dịch Vọng Hậu, Cầu Giấy, Hà Nội",
+        price: "3.000.000 đ",
+        image:
+          "https://bandon.vn/uploads/posts/thiet-ke-nha-tro-dep-2020-bandon-0.jpg",
+      },
+      {
+        id: 2,
+        place: "Hà Nội",
+        title: "Phòng Trọ 25m2 Full Nội Thất Gần ĐH SPHN",
+        rating: 5,
+        address: "Ngõ 38, Dịch Vọng Hậu, Cầu Giấy, Hà Nội",
+        price: "3.000.000 đ",
+        image:
+          "https://bandon.vn/uploads/posts/thiet-ke-nha-tro-dep-2020-bandon-0.jpg",
+      },
+      {
+        id: 3,
+        place: "Hà Nội",
+        title: "Phòng Trọ 25m2 Full Nội Thất Gần ĐH SPHN",
+        rating: 5,
+        address: "Ngõ 38, Dịch Vọng Hậu, Cầu Giấy, Hà Nội",
+        price: "3.000.000 đ",
+        image:
+          "https://bandon.vn/uploads/posts/thiet-ke-nha-tro-dep-2020-bandon-0.jpg",
+      },
+      {
+        id: 4,
+        place: "Hà Nội",
+        title: "Phòng Trọ 25m2 Full Nội Thất Gần ĐH SPHN",
+        rating: 5,
+        address: "Ngõ 38, Dịch Vọng Hậu, Cầu Giấy, Hà Nội",
+        price: "3.000.000 đ",
+        image:
+          "https://bandon.vn/uploads/posts/thiet-ke-nha-tro-dep-2020-bandon-0.jpg",
+      },
+      {
+        id: 5,
+        place: "Hà Nội",
+        title: "Phòng Trọ 25m2 Full Nội Thất Gần ĐH SPHN",
+        rating: 5,
+        address: "Ngõ 38, Dịch Vọng Hậu, Cầu Giấy, Hà Nội",
+        price: "3.000.000 đ",
+        image:
+          "https://bandon.vn/uploads/posts/thiet-ke-nha-tro-dep-2020-bandon-0.jpg",
+      },
+      {
+        id: 6,
+        place: "Hà Nội",
+        title: "Phòng Trọ 25m2 Full Nội Thất Gần ĐH SPHN",
+        rating: 5,
+        address: "Ngõ 38, Dịch Vọng Hậu, Cầu Giấy, Hà Nội",
+        price: "3.000.000 đ",
+        image:
+          "https://bandon.vn/uploads/posts/thiet-ke-nha-tro-dep-2020-bandon-0.jpg",
+      },
+    ],
+  },
+  footerAPIs: {
+    aboutUs: [
+      {
+        id: 1,
+        title: "CHÚNG TÔI",
+        content:
+          "Với hệ thống căn hộ tiện ích đạt chuẩn, Bản Đôn chú trọng xây dựng tính cộng đồng và phát triển đời sống xã hội cho thế hệ trẻ dựa trên sức mạnh của công nghệ.",
+      },
+      {
+        id: 2,
+        title: "CÔNG TY CỔ PHẦN ĐẦU TƯ BẢN ĐÔN",
+        content:
+          "Số ĐKKD 0108672920 do Sở Kế hoạch và Đầu tư TP Hà Nội cấp ngày 29 tháng 03 năm 2019.",
+      },
+    ],
+    link: [
+      {
+        id: 1,
+        content: "Hướng dẫn đặt phòng",
+        url: "#",
+      },
+      {
+        id: 2,
+        content: "Hình thức thanh toán",
+        url: "#",
+      },
+      {
+        id: 3,
+        content: "Chính sách đổi trả/ hủy phòng",
+        url: "#",
+      },
+      {
+        id: 4,
+        content: "Chính sách bảo mật thông tin",
+        url: "#",
+      },
+    ],
+    companyInfo: [
+      {
+        id: 1,
+        title: "Văn phòng :",
+        content: "58A Trung Kính, Trung Hòa, Cầu Giấy, Hà Nội.",
+      },
+      {
+        id: 2,
+        title: "E-mail :",
+        content: "info@bandon.vn",
+      },
+      {
+        id: 3,
+        title: "Số điện thoại :",
+        content: " (+84) 0838.99.3838",
+      },
+      {
+        id: 4,
+        title: "Địa chỉ ĐKKD :",
+        content:
+          "Số 10, ngách 59/130/5 đường Mễ Trì, Phường Mễ Trì, Quận Nam Từ Liêm, Hà Nội",
+      },
+    ],
+  },
+};
+
+export default APIs;
