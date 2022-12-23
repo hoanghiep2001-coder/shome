@@ -6,6 +6,7 @@ function Home() {
     <>
       <Header />
       <Body
+        className="body"
         Hero={true}
         FilterPageComp={false}
         Filter={true}

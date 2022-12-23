@@ -8,7 +8,7 @@ import FilterPageComp from "../../../components/Layout/FilterComponent";
 
 function Body(props) {
   return (
-    <div className="body">
+    <div className={props.className}>
       {props.Hero ? <Hero /> : ""}
       {props.FilterPageComp ? <FilterPageComp /> : ""}
       {props.Filter ? <Filter /> : ""}

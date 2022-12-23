@@ -65,9 +65,17 @@ a:hover {
   transition: all 0.3s ease-in-out;
   box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.2);
 }
-.header .header__container .header__homePage .icon-LOGO_demo {
-  width: 175px;
+.header.is-sticky .header__container {
+  padding: 10px 12px;
+}
+.header.is-sticky .header__container .header__homePage .icon-LOGO_demo {
+  width: 120px;
   color: #eabd4d;
+}
+.header .header__container .header__homePage .icon-LOGO_demo {
+  width: 140px;
+  color: #eabd4d;
+  transition: 0.3s all ease-in-out;
 }
 .header .header__container .header__nav-item.user-action:last-child .header__nav-link {
   border: 1px solid #1c1818;
@@ -102,7 +110,7 @@ a:hover {
 }
 
 .body {
-  padding-top: 120px;
+  padding-top: 80px;
   position: relative;
 }
 .body .body__hero {
@@ -413,7 +421,14 @@ a:hover {
   outline: none;
   box-shadow: none;
 }
-
+.body.filter-page {
+  padding-top: 100px;
+}
+.body.filter-page .body__filterPage {
+  padding: 34px 0;
+  min-height: 240px;
+  background-color: #f6e9d5;
+}
 .footer {
   background-color: #f6e9d5;
   color: #0c163b;

@@ -8,12 +8,26 @@
   z-index: 1000;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 0 5px 0px rgb(0 0 0 / 20%);
+  &.is-sticky {
+    .header__container {
+      padding: 10px 12px;
+      .header__homePage {
+        .icon-LOGO_demo {
+          // font-size: 80px;
+          width: $logo-default-width-is-sticky;
+          color: $color-button;
+        }
+      }
+    }
+  }
   .header__container {
+    // padding: 10px 12px;
     .header__homePage {
       .icon-LOGO_demo {
         // font-size: 80px;
         width: $logo-default-width;
         color: $color-button;
+        transition: 0.3s all ease-in-out;
       }
     }
     .header__nav-item {

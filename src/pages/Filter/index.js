@@ -12,6 +12,7 @@ function FilterPage() {
     <>
       <Header></Header>
       <Body
+        className="body filter-page"
         Hero={false}
         FilterPageComp={true}
         Filter={false}
