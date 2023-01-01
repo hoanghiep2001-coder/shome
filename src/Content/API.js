@@ -34,7 +34,7 @@ const APIs = {
     hero: {
       slogan: "TÌM NHANH, KIẾM DỄ TRỌ MỚI TOÀN QUỐC",
       description:
-        "Tromoi.com - Trang thông tin tìm và cho thuê phòng trọ nhanh chóng, hiệu quả số với hơn 500 tin đăng mới và 30.000 lượt xem mỗi ngày.",
+        "SHOME - Chúng tôi là những người bạn ở đây giúp bạn tìm kiếm phòng trọ...",
       banner: "../Content/thumb/bg_head.jpg",
     },
     filter: [
@@ -231,13 +231,12 @@ const APIs = {
         id: 1,
         title: "CHÚNG TÔI",
         content:
-          "Với hệ thống căn hộ tiện ích đạt chuẩn, Bản Đôn chú trọng xây dựng tính cộng đồng và phát triển đời sống xã hội cho thế hệ trẻ dựa trên sức mạnh của công nghệ.",
+          "Nhóm sinh viên nghiên cứu khoa học của trường Đại học tại Hà Nội với mong muốn xây dựng và phát triển website Hỗ Trợ Tìm Kiếm Nhà Trọ giúp mọi người dễ dàng tìm kiếm cho mình nhà trọ phù hợp, tiện lợi và nhanh chóng nhất.",
       },
       {
         id: 2,
-        title: "CÔNG TY CỔ PHẦN ĐẦU TƯ BẢN ĐÔN",
-        content:
-          "Số ĐKKD 0108672920 do Sở Kế hoạch và Đầu tư TP Hà Nội cấp ngày 29 tháng 03 năm 2019.",
+        title: "SHOME - BE LIKE FRIEND",
+        content: "Lên ý tưởng và thành lập ngày 18 tháng 11 năm 2022.",
       },
     ],
     link: [
@@ -266,23 +265,22 @@ const APIs = {
       {
         id: 1,
         title: "Văn phòng :",
-        content: "58A Trung Kính, Trung Hòa, Cầu Giấy, Hà Nội.",
+        content: "Hà Nội.",
       },
       {
         id: 2,
         title: "E-mail :",
-        content: "info@bandon.vn",
+        content: "httkphongtro@gmail.com",
       },
       {
         id: 3,
         title: "Số điện thoại :",
-        content: " (+84) 0838.99.3838",
+        content: " (+84) 0396448870",
       },
       {
         id: 4,
         title: "Địa chỉ ĐKKD :",
-        content:
-          "Số 10, ngách 59/130/5 đường Mễ Trì, Phường Mễ Trì, Quận Nam Từ Liêm, Hà Nội",
+        content: "Số 4, ngách 124 Vĩnh Tuy, Phường Vĩnh Tuy, Hà Nội",
       },
     ],
   },
