@@ -1,13 +1,33 @@
 import APIs from "../../../API";
+
 import { IoLocationOutline } from "react-icons/io5";
 import { FaAngleDown } from "react-icons/fa";
 import searchIcon from "../../../image/icon/search-icon.svg";
 import Button from "../../../../components/Button";
 import DropdownComponent from "../../../../components/Dropdown";
+import { React, useState, useEffect } from "react";
 
 function Filter(props) {
+  const [bodyClass, setBodyClass] = useState(
+    "container body__filter d-lg-flex justify-content-center"
+  );
+  useEffect(() => {
+    const filterCompOffsetTop =
+      document.querySelector("#filterComponent").offsetTop;
+    const handleStickyFilterComp = () => {
+      if (window.scrollY > filterCompOffsetTop) {
+        setBodyClass(
+          "container body__filter d-lg-flex justify-content-center is-scrollDown"
+        );
+      } else {
+        setBodyClass("container body__filter d-lg-flex justify-content-center");
+      }
+    };
+
+    window.addEventListener("scroll", handleStickyFilterComp);
+  }, []);
   return (
-    <div className="container body__filter d-lg-flex justify-content-center">
+    <div id="filterComponent" className={bodyClass}>
       <form
         action=""
         method="POST"
