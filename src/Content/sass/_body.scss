@@ -46,6 +46,8 @@
       z-index: 1000;
       left: 0;
       transform: unset;
+      background-color: rgba(255, 255, 255, 0.85);
+      // transition: 0.3s ease-out;
       .body__filter-form {
         margin: 10px 0;
         padding: 0;
@@ -251,6 +253,14 @@
         align-items: center;
         justify-content: center;
         position: relative;
+        cursor: pointer;
+        transition: 0.3s all ease-in-out;
+        &:hover {
+          .convenient__item-icon,
+          .convenient__item-title {
+            color: $color-underline;
+          }
+        }
         &:nth-child(5) {
           .convenient__item-icon {
             width: 40px;
@@ -286,12 +296,15 @@
           font-size: 46px;
           margin-right: 12px;
           color: $color-title;
+          transition: 0.3s all ease-in-out;
         }
         .convenient__item-title {
           font-size: 14px;
           margin-bottom: 0;
           color: $color-title;
           font-family: "BeVietnamPro-SemiBold";
+          transition: 0.3s all ease-in-out;
+
           // text-align: ju;
         }
       }
@@ -315,7 +328,7 @@
           display: flex;
           align-items: center;
           justify-content: space-between;
-          margin-top: 20px;
+          margin-top: 32px;
           .service_actions-contact {
           }
           .service_actions-icon {
@@ -371,6 +384,33 @@
       min-height: 240px;
       background-color: $color-background-footer;
       .body__filterPage-form {
+        .body__filterPage-list {
+          margin: 0;
+          border: 1px solid $color-title-black;
+          border-radius: 8px;
+          background-color: $color-white;
+          padding: 2px 0;
+          .btn-group {
+            .filter__nav-button {
+              &::before {
+                position: absolute;
+                content: "";
+                width: 1px;
+                height: 100%;
+                top: 0;
+                left: -38px;
+                background-color: rgb(207, 207, 207);
+              }
+            }
+            &:first-child {
+              .filter__nav-button {
+                &::before {
+                  position: unset;
+                }
+              }
+            }
+          }
+        }
         .filter__search-wrapper {
           // width: 100%;
           border: 1px solid $color-title-black;

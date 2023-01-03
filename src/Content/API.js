@@ -224,6 +224,89 @@ const APIs = {
           "https://bandon.vn/uploads/posts/thiet-ke-nha-tro-dep-2020-bandon-0.jpg",
       },
     ],
+
+    Pages: {
+      filter: [
+        {
+          id: 1,
+          title: "Khu vực",
+          dropDown: [
+            {
+              id: 1,
+              content: "Hoàng Mai",
+              fakeId: 101,
+            },
+            {
+              id: 2,
+              content: "Vĩnh Tuy",
+              fakeId: 102,
+            },
+            {
+              id: 3,
+              content: "Vĩnh Hưng",
+              fakeId: 103,
+            },
+            {
+              id: 4,
+              content: "Lĩnh Nam",
+              fakeId: 104,
+            },
+          ],
+        },
+        {
+          id: 2,
+          title: "Loại Hình",
+          dropDown: [
+            {
+              id: 1,
+              content: "Vệ sinh khép kín",
+              fakeId: 110,
+            },
+            {
+              id: 2,
+              content: "Vệ sinh chung",
+              fakeId: 111,
+            },
+            {
+              id: 3,
+              content: "Chung cư mini",
+              fakeId: 112,
+            },
+          ],
+        },
+        {
+          id: 3,
+          title: "Mức Giá",
+          dropDown: [
+            {
+              id: 1,
+              content: "1.000.000 - 1.999.999 VNĐ",
+              fakeId: 120,
+            },
+            {
+              id: 2,
+              content: "2.000.000 - 2.999.999 VNĐ",
+              fakeId: 121,
+            },
+            {
+              id: 3,
+              content: "3.000.000 - 3.999.999 VNĐ",
+              fakeId: 122,
+            },
+            {
+              id: 4,
+              content: "4.000.000 - 4.999.999 VNĐ",
+              fakeId: 123,
+            },
+            {
+              id: 5,
+              content: "5.000.000 - 5.999.999 VNĐ",
+              fakeId: 124,
+            },
+          ],
+        },
+      ],
+    },
   },
   footerAPIs: {
     aboutUs: [
