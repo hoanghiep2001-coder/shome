@@ -5,6 +5,7 @@ import SubAboutUs from "./Component/subAboutUs";
 import Convenient from "./Component/convenient";
 import Service from "./Component/service";
 import FilterPageComp from "../../../components/Layout/FilterComponent";
+import OutstandingArea from "./Component/OutstandsingArea/OutstandingArea";
 
 function Body(props) {
   return (
@@ -14,6 +15,7 @@ function Body(props) {
       {props.Filter ? <Filter /> : ""}
       {props.ListRoom ? <ListRoom /> : ""}
       {props.SubAboutUs ? <SubAboutUs /> : ""}
+      {props.OutstandingArea ? <OutstandingArea /> : ""}
       {props.Convenient ? <Convenient /> : ""}
       {props.Service ? <Service /> : ""}
     </div>

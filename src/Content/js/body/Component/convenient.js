@@ -55,7 +55,7 @@ const iconConvenients = [
 function Convenient() {
   const [iconClass, setIconClass] = useState("convenient__item-icon");
   return (
-    <div className="body__convenient">
+    <div className="body__convenient bg-main">
       <div className="container">
         <div className="body__convenient-title">
           <h2 className="title-section">NHỮNG TIỆN ÍCH CHÚNG TÔI ĐEM LẠI</h2>

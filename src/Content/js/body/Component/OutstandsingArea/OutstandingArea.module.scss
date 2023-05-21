@@ -1,0 +1,49 @@
+.body__subAboutUs-title {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.item {
+    border-radius: 12px;
+    position: relative;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.image {
+    position: relative;
+    width: 100%;
+    border-radius: 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: calc(100% * 12 / 9);
+    &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 10%, rgba(0, 0, 0, 0.3) 25%, rgba(0, 0, 0, 0) 40%);
+    }
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    padding: 20px;
+}
+
+.overlay_title {
+    font-size: 22px;
+    letter-spacing: 0.6;
+}
+
+.overlay_desc {
+    font-size: 12px;
+}

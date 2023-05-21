@@ -240,6 +240,7 @@ a:hover {
 }
 .body .body__listRoom .listRoom__item .listRoom__item-wrapper .listRoom__item-img {
   width: 100%;
+  height: 174px;
   border-start-start-radius: 20px;
   border-start-end-radius: 20px;
   transition: all 0.3s ease-in-out;
@@ -495,6 +496,10 @@ a:hover {
   width: 100%;
   border: 1px solid #eabd4d;
   border-radius: 8px !important;
+}
+
+.bg-main {
+  background-color: #f6e9d5 !important;
 }
 
 .footer {

@@ -181,7 +181,7 @@ const APIs = {
         address: "Ngõ 38, Dịch Vọng Hậu, Cầu Giấy, Hà Nội",
         price: "3.000.000 đ",
         image:
-          "https://bandon.vn/uploads/posts/thiet-ke-nha-tro-dep-2020-bandon-0.jpg",
+          "https://toigingiuvedep.vn/wp-content/uploads/2021/10/hinh-anh-giuong-ngu-dep-hien-dai-va-thoai-mai-nhat.jpg",
       },
       {
         id: 3,
@@ -191,7 +191,7 @@ const APIs = {
         address: "Ngõ 38, Dịch Vọng Hậu, Cầu Giấy, Hà Nội",
         price: "3.000.000 đ",
         image:
-          "https://bandon.vn/uploads/posts/thiet-ke-nha-tro-dep-2020-bandon-0.jpg",
+          "https://noithatthongminh.pro/wp-content/uploads/2019/02/48-c99d.jpg",
       },
       {
         id: 4,
@@ -201,7 +201,7 @@ const APIs = {
         address: "Ngõ 38, Dịch Vọng Hậu, Cầu Giấy, Hà Nội",
         price: "3.000.000 đ",
         image:
-          "https://bandon.vn/uploads/posts/thiet-ke-nha-tro-dep-2020-bandon-0.jpg",
+          "https://furnibuy.com/wp-content/uploads/2020/07/tranh-lo-hoa-trang-tri-phong-ngu-dep-hien-dai-1318.jpg",
       },
       {
         id: 5,
@@ -211,7 +211,7 @@ const APIs = {
         address: "Ngõ 38, Dịch Vọng Hậu, Cầu Giấy, Hà Nội",
         price: "3.000.000 đ",
         image:
-          "https://bandon.vn/uploads/posts/thiet-ke-nha-tro-dep-2020-bandon-0.jpg",
+          "https://72.sortlink.net/ckfinder/userfiles/files/Hinh-anh-phong-ngu-dep-1.jpg",
       },
       {
         id: 6,
@@ -221,10 +221,55 @@ const APIs = {
         address: "Ngõ 38, Dịch Vọng Hậu, Cầu Giấy, Hà Nội",
         price: "3.000.000 đ",
         image:
-          "https://bandon.vn/uploads/posts/thiet-ke-nha-tro-dep-2020-bandon-0.jpg",
+          "https://khonem.com/upload/images/G4.jpg",
+      },
+      {
+        id: 7,
+        place: "Hà Nội",
+        title: "Phòng Trọ 25m2 Full Nội Thất Gần ĐH SPHN",
+        rating: 5,
+        address: "Ngõ 38, Dịch Vọng Hậu, Cầu Giấy, Hà Nội",
+        price: "3.000.000 đ",
+        image:
+          "https://blog.onhome.asia/hs-fs/hubfs/phong-ngu-5m2-cua-anh-thanh.jpg?width\u003d1200\u0026name\u003dphong-ngu-5m2-cua-anh-thanh.jpg",
+      },
+      {
+        id: 8,
+        place: "Hà Nội",
+        title: "Phòng Trọ 25m2 Full Nội Thất Gần ĐH SPHN",
+        rating: 5,
+        address: "Ngõ 38, Dịch Vọng Hậu, Cầu Giấy, Hà Nội",
+        price: "3.000.000 đ",
+        image:
+          "https://noithattugia.com/wp-content/uploads/2022/04/thiet-ke-noi-that-phong-ngu-cho-be-gai-voi-tong-mau-hong-chu-dao-ket-hop-cung-cac-do-noi-that-co-mau-nhe-nhang-nhu-xanh-reu-va-trang_1659933121.jpg",
       },
     ],
-
+    outstandingArea: [
+      {
+        id: 1,
+        path: "https://tromoi.com/frontend/home/images/thanh-pho/ho-chi-minh.jpg",
+        title: "Hồ Chí Minh",
+        description: "9411 tin trọ"
+      },
+      {
+        id: 2,
+        path: "https://tromoi.com/frontend/home/images/thanh-pho/ha-noi.jpg",
+        title: "Hà Nội",
+        description: "811 tin trọ"
+      },
+      {
+        id: 3,
+        path: "https://tromoi.com/frontend/home/images/thanh-pho/thua-thien-hue.jpg",
+        title: "Thừa Thiên Huế",
+        description: "655 tin trọ"
+      },
+      {
+        id: 4,
+        path: "https://tromoi.com/frontend/home/images/thanh-pho/da-nang.jpg",
+        title: "Đà Nẵng",
+        description: "570 tin trọ"
+      },
+    ],
     Pages: {
       filter: [
         {

@@ -11,6 +11,7 @@ function Home() {
         FilterPageComp={false}
         Filter={true}
         ListRoom={true}
+        OutstandingArea={true}
         SubAboutUs={true}
         Convenient={true}
         Service={true}
