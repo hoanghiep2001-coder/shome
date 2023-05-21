@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -256,11 +257,23 @@ a:hover {
   font-size: 16px;
   color: #0c1c56;
   font-family: "BeVietnamPro-SemiBold";
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* số dòng hiển thị */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .body .body__listRoom .listRoom__item .listRoom__item-content .listRoom__content-address {
   color: #7c7878;
   font-size: 14px;
   margin-bottom: 12px;
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* số dòng hiển thị */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .body .body__listRoom .listRoom__item .listRoom__item-content .listRoom__item-price {
   font-family: "BeVietnamPro-SemiBold";
@@ -500,6 +513,11 @@ a:hover {
 
 .bg-main {
   background-color: #f6e9d5 !important;
+}
+
+.filter__nav-dropdownItem {
+  background-color: #fff;
+  position: relative;
 }
 
 .footer {

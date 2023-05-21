@@ -5,6 +5,7 @@
 
 .item {
     border-radius: 12px;
+    overflow: hidden;
     position: relative;
     &:hover {
         cursor: pointer;
@@ -19,6 +20,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: calc(100% * 12 / 9);
+    transition: .3s ease-out    ;
+    &:hover {
+        transform: scale(1.1);
+    }
     &::after {
         position: absolute;
         content: "";
