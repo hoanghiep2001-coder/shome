@@ -1,15 +1,11 @@
-import APIs from "../../../API";
-import { TfiReload } from "react-icons/tfi";
-import { TbNotes } from "react-icons/tb";
+
 import { BiCheckShield } from "react-icons/bi";
-import { BsClipboardCheck, BsFillBookmarkStarFill } from "react-icons/bs";
 import { FaRegBookmark } from "react-icons/fa";
 import compareHouse from "../../../image/icon/compare-house.png";
 import {
   FaMapMarkedAlt,
   FaImages,
   FaUsersCog,
-  FaStickyNote,
 } from "react-icons/fa";
 import { useState } from "react";
 
@@ -58,7 +54,12 @@ function Convenient() {
     <div className="body__convenient bg-main">
       <div className="container">
         <div className="body__convenient-title">
-          <h2 className="title-section">NHỮNG TIỆN ÍCH CHÚNG TÔI ĐEM LẠI</h2>
+          <div className="title-section">
+            <h2>
+              NHỮNG TIỆN ÍCH CHÚNG TÔI ĐEM LẠI
+            </h2>
+            <div className="title-section-line"></div>
+          </div>
         </div>
         <div className="body__convenient-content row">
           {iconConvenients.map((icon, index) => {

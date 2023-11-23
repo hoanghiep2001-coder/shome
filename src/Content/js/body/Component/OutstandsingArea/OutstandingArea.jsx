@@ -5,10 +5,15 @@ import classnames from "classnames/bind"
 const cb = classnames.bind(styles);
 
 function OutstandingArea() {
-    return ( <div className={cb("body__convenient")}>
+    return (<div className={cb("body__convenient")}>
         <div className={cb("container")}>
             <div className={cb("body__subAboutUs-title")}>
-                <h2 className="title-section">TỈNH/THÀNH PHỐ NỔI BẬT</h2>
+            <div className="title-section">
+          <h2>
+          KHU VỰC NỔI BẬT
+              </h2>
+              <div className="title-section-line"></div>
+          </div>
             </div>
             <div className={cb("row")}>
                 {APIs.bodyAPIs.outstandingArea.map((area, index) => {
@@ -17,7 +22,7 @@ function OutstandingArea() {
                             <div className={cb("image")} style={{
                                 backgroundImage: `url(${area.path})`
                             }}>
-                                
+
                             </div>
                             <div className={cb("overlay")}>
                                 <h2 className={cb("overlay_title")}>
@@ -32,7 +37,7 @@ function OutstandingArea() {
                 })}
             </div>
         </div>
-    </div> );
+    </div>);
 }
 
 export default OutstandingArea;

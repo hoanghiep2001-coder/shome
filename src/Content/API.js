@@ -84,6 +84,16 @@ const APIs = {
             content: "2.000.000 - 2.999.999 VNĐ",
             fakeId: 121,
           },
+          {
+            id: 3,
+            content: "2.000.000 - 2.999.999 VNĐ",
+            fakeId: 122,
+          },
+          {
+            id: 4,
+            content: "2.000.000 - 2.999.999 VNĐ",
+            fakeId: 123,
+          },
         ],
       },
       {
@@ -172,6 +182,8 @@ const APIs = {
         price: "3.000.000 đ",
         image:
           "https://bandon.vn/uploads/posts/thiet-ke-nha-tro-dep-2020-bandon-0.jpg",
+        link: "/details",
+        data_id: 1,
       },
       {
         id: 2,
@@ -182,6 +194,8 @@ const APIs = {
         price: "1.500.000 đ",
         image:
           "https://toigingiuvedep.vn/wp-content/uploads/2021/10/hinh-anh-giuong-ngu-dep-hien-dai-va-thoai-mai-nhat.jpg",
+        link: "/details",
+        data_id: 2
       },
       {
         id: 3,
@@ -192,6 +206,8 @@ const APIs = {
         price: "3.500.000 đ",
         image:
           "https://noithatthongminh.pro/wp-content/uploads/2019/02/48-c99d.jpg",
+        link: "/details",
+        data_id: 3,
       },
       {
         id: 4,
@@ -202,6 +218,8 @@ const APIs = {
         price: "2.000.000 đ",
         image:
           "https://furnibuy.com/wp-content/uploads/2020/07/tranh-lo-hoa-trang-tri-phong-ngu-dep-hien-dai-1318.jpg",
+        link: "/details",
+        data_id: 4,
       },
       {
         id: 5,
@@ -211,7 +229,9 @@ const APIs = {
         address: " Linh Đàm, Hoàng Liệt, Hoàng Mai , Hoàng Mai",
         price: "2.100.000 đ",
         image:
-          "https://72.sortlink.net/ckfinder/userfiles/files/Hinh-anh-phong-ngu-dep-1.jpg",
+          "https://noithatmanhhe.vn/media/31975/thiet-ke-noi-that-phong-ngu-01-1.jpg",
+        link: "/details",
+        data_id: 5,
       },
       {
         id: 6,
@@ -222,6 +242,8 @@ const APIs = {
         price: "3.000.000 đ",
         image:
           "https://khonem.com/upload/images/G4.jpg",
+        link: "/details",
+        data_id: 6,
       },
       {
         id: 7,
@@ -232,6 +254,8 @@ const APIs = {
         price: "1.700.000 đ",
         image:
           "https://blog.onhome.asia/hs-fs/hubfs/phong-ngu-5m2-cua-anh-thanh.jpg?width\u003d1200\u0026name\u003dphong-ngu-5m2-cua-anh-thanh.jpg",
+        link: "/details",
+        data_id: 7,
       },
       {
         id: 8,
@@ -242,31 +266,33 @@ const APIs = {
         price: "2.600.000 đ",
         image:
           "https://noithattugia.com/wp-content/uploads/2022/04/thiet-ke-noi-that-phong-ngu-cho-be-gai-voi-tong-mau-hong-chu-dao-ket-hop-cung-cac-do-noi-that-co-mau-nhe-nhang-nhu-xanh-reu-va-trang_1659933121.jpg",
+        link: "/details",
+        data_id: 8,
       },
     ],
     outstandingArea: [
       {
         id: 1,
-        path: "https://tromoi.com/frontend/home/images/thanh-pho/ho-chi-minh.jpg",
-        title: "Hồ Chí Minh",
+        path: "https://znews-photo.zingcdn.me/w660/Uploaded/lce_qjlcv/2022_10_09/nga_tu_so_HQ_zing.jpg",
+        title: "Bách Kinh Xây",
         description: "9411 tin trọ"
       },
       {
         id: 2,
         path: "https://tromoi.com/frontend/home/images/thanh-pho/ha-noi.jpg",
-        title: "Hà Nội",
+        title: "Hoàn Kiếm",
         description: "811 tin trọ"
       },
       {
         id: 3,
-        path: "https://tromoi.com/frontend/home/images/thanh-pho/thua-thien-hue.jpg",
-        title: "Thừa Thiên Huế",
+        path: "https://file4.batdongsan.com.vn/2022/01/12/PHJN6Zw0/20220112181302-42f3.jpg",
+        title: "Thanh Xuân",
         description: "655 tin trọ"
       },
       {
         id: 4,
-        path: "https://tromoi.com/frontend/home/images/thanh-pho/da-nang.jpg",
-        title: "Đà Nẵng",
+        path: "https://cdn.reatimes.vn/mediav2/media_old/media/uploaded/25/2018/01/20/quan-Long-Bien-se-co-kich-ban-tuong-tu-voi-Thu-Thiem-1.jpg",
+        title: "Long Biên",
         description: "570 tin trọ"
       },
     ],

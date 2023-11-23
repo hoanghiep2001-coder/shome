@@ -5,7 +5,13 @@ function SubAboutUs() {
     <div className="body__subAboutUs ">
       <div className="body__subAboutUs-desc container">
         <div className="body__subAboutUs-title">
-          <h2 className="title-section">CHÚNG TÔI LÀ AI</h2>
+          <div className="title-section">
+          <h2>
+          CHÚNG TÔI LÀ AI
+              </h2>
+              <div className="title-section-line"></div>
+          </div>
+         
         </div>
         {APIs.bodyAPIs.subAboutUs.descriptions.map((content) => {
           return (

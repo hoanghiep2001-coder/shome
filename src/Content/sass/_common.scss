@@ -14,20 +14,17 @@ a {
 }
 
 .title-section {
-  position: relative;
   display: inline-block;
   color: $color-title;
   letter-spacing: 1.3px;
-  &::after {
-    position: absolute;
-    bottom: -54px;
-    height: 2px;
-    background-color: #ffb923;
-    width: 60%;
-    content: "";
-    left: 50%;
-    transform: translateX(-50%);
-  }
+  text-align: center;
+}
+
+.title-section-line {
+  margin: 54px auto 0 ;
+  width: 60%;
+  height: 2px;
+  background-color: #ffb923;
 }
 
 a:hover {

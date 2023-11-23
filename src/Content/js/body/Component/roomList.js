@@ -5,7 +5,12 @@ function ListRoom() {
     <div className="body__listRoom">
       <div className="container">
         <div className="body__listRoom-title">
-          <h2 className="title-section">DANH SÁCH PHÒNG TRỌ NỔI BẬT</h2>
+          <div className="title-section">
+              <h2>
+              DANH SÁCH PHÒNG TRỌ NỔI BẬT
+              </h2>
+              <div className="title-section-line"></div>
+            </div>
         </div>
         <div
           className="row"
@@ -23,6 +28,7 @@ function ListRoom() {
                 address={item.address}
                 place={item.place}
                 image={item.image}
+                link={item.link}
               />
             );
           })}
@@ -35,7 +41,7 @@ function ListRoom() {
 function RoomItem(props) {
   return (
     <div className="col col-lg-3">
-      <div className="listRoom__item">
+      <a className="listRoom__item" href={props.link}>
         <div className="listRoom__item-wrapper">
           <img
             className="listRoom__item-img"
@@ -52,7 +58,7 @@ function RoomItem(props) {
             <FaRegBookmark className="listRoom__item-mark" />
           </div>
         </div>
-      </div>
+      </a>
     </div>
   );
 }

@@ -22,7 +22,7 @@ function Header() {
   return (
     <div className={headerClass}>
       <div className="header__container container d-lg-flex align-items-lg-center justify-content-lg-between">
-        <a href="#" className="header__homePage">
+        <a href="/" className="header__homePage">
           <img src={Logo} className="icon-LOGO_demo" />
         </a>
 
