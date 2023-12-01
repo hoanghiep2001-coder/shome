@@ -1,0 +1,20 @@
+.banner {
+    text-align: center;
+}
+
+.image {
+    border-radius: 16px;
+    object-fit: cover;
+    width: 1160px;
+    height: 450px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.text {
+    font-size: 20px;
+}

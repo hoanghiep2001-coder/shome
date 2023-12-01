@@ -52,6 +52,10 @@ a:hover {
   border: 1px solid #eabd4d;
 }
 
+.pad-t-60 {
+  padding-top: 60px;
+}
+
 .header {
   background-color: #fff;
   padding: 10px 0;
