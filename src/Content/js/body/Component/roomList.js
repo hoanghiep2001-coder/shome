@@ -1,5 +1,9 @@
+
+import { Link } from "react-router-dom";
+import Details from "../../../../pages/Details/details";
 import APIs from "../../../API";
 import { FaRegBookmark } from "react-icons/fa";
+
 function ListRoom() {
   return (
     <div className="body__listRoom">
@@ -29,6 +33,7 @@ function ListRoom() {
                 place={item.place}
                 image={item.image}
                 link={item.link}
+                data_id={item.data_id}
               />
             );
           })}
@@ -39,9 +44,20 @@ function ListRoom() {
 }
 
 function RoomItem(props) {
+
+  const handleClick = (e) => {
+    e.preventDefault(); 
+    
+    const anchorElement = e.currentTarget; 
+    const dataId = anchorElement.getAttribute('data-id'); 
+    
+    sessionStorage.setItem(`detailsPage`, dataId);
+    window.location.assign("/details");
+  }
+    
   return (
     <div className="col col-lg-3">
-      <a className="listRoom__item" href={props.link}>
+      <a href={props.link} className="listRoom__item" onClick={handleClick} data-id={props.data_id}>
         <div className="listRoom__item-wrapper">
           <img
             className="listRoom__item-img"

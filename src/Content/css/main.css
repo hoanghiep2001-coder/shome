@@ -235,6 +235,8 @@ a:hover {
 }
 .body .body__listRoom .listRoom__item .listRoom__item-wrapper {
   overflow: hidden;
+  border-start-start-radius: 20px;
+  border-start-end-radius: 20px;
 }
 .body .body__listRoom .listRoom__item .listRoom__item-wrapper .listRoom__item-img {
   width: 100%;

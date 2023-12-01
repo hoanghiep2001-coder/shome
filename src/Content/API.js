@@ -270,6 +270,176 @@ const APIs = {
         data_id: 8,
       },
     ],
+    detailList: [
+      {
+        id: 1,
+        place: "Hà Nội",
+        title: "Phòng Trọ 25m2 Full Nội Thất Gần ĐH SPHN",
+        rating: 5,
+        address: "Ngõ 38, Dịch Vọng Hậu, Cầu Giấy, Hà Nội",
+        price: "3.000.000 đ",
+        images: [
+          {
+            path: "https://tromoi.com/uploads/guest/o_1hghp7f81sfi43313vt19lgiv1d.jpg",
+          },
+          {
+            path: "https://file4.batdongsan.com.vn/resize/745x510/2022/02/28/20220228110557-0c0e_wm.jpg",
+          },
+          {
+            path: "https://thesaigontimes.vn/wp-content/uploads/2022/08/chungcu4.jpg",
+          },
+        ],
+        link: "/details",
+        data_id: 1,
+      },
+      {
+        id: 2,
+        place: "Huế",
+        title: "Cho thuê trọ phòng rộng rãi ngay đường quốc lộ",
+        rating: 5,
+        address: "Khối phố Bồng Lai, Phường Điện Minh, Điện bàn , Điện Bàn",
+        price: "1.500.000 đ",
+        images: [
+          {
+            path: "https://i1-ngoisao.vnecdn.net/2021/04/02/Anh-1-2-1617326758.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=6Zbcom1lh0k4utXCEzt7hA",
+          },
+          {
+            path: "https://cdn.tingtong.vn/images/01821b0987c13d0b647eafaf818f1636.jpg",
+          },
+          {
+            path: "https://thesaigontimes.vn/wp-content/uploads/2022/08/chungcu4.jpg",
+          },
+        ],
+        link: "/details",
+        data_id: 2
+      },
+      {
+        id: 3,
+        place: "Hồ Chí Minh",
+        title: "Phòng Full NT giá từ 3tr Quang Trung P8, GV",
+        rating: 5,
+        address: "Quang Trung, 8, Gò Vấp , Gò Vấp",
+        price: "3.500.000 đ",
+        images: [
+          {
+            path: "https://media.loveitopcdn.com/26706/thumb/hinh-anh-mau-thiet-ke-phong-tro-dep-dien-tich-15m2-18m2.jpeg",
+          },
+          {
+            path: "https://file4.batdongsan.com.vn/resize/745x510/2022/02/28/20220228110557-0c0e_wm.jpg",
+          },
+          {
+            path: "https://thesaigontimes.vn/wp-content/uploads/2022/08/chungcu4.jpg",
+          },
+        ],
+        link: "/details",
+        data_id: 3,
+      },
+      {
+        id: 4,
+        place: "Hồ Chí Minh",
+        title: "Phòng Trọ Mới Xây Đường 297- 22m2 An Ninh Sạch Sẽ",
+        rating: 5,
+        address: "3/23/19 Đường số 297, Phường Phước Long B, Quận 9, Hồ Chí Minh , Quận 9",
+        price: "2.000.000 đ",
+        images: [
+          {
+            path: "https://tromoi.com/uploads/guest/o_1hghp7f81sfi43313vt19lgiv1d.jpg",
+          },
+          {
+            path: "https://file4.batdongsan.com.vn/resize/745x510/2022/02/28/20220228110557-0c0e_wm.jpg",
+          },
+          {
+            path: "https://thesaigontimes.vn/wp-content/uploads/2022/08/chungcu4.jpg",
+          },
+        ],
+        link: "/details",
+        data_id: 4,
+      },
+      {
+        id: 5,
+        place: "Hà Nội",
+        title: "Cho thuê chung cư HH linh đàm 1tr5 tr/tháng",
+        rating: 5,
+        address: " Linh Đàm, Hoàng Liệt, Hoàng Mai , Hoàng Mai",
+        price: "2.100.000 đ",
+        images: [
+          {
+            path: "https://tromoi.com/uploads/guest/o_1hghp7f81sfi43313vt19lgiv1d.jpg",
+          },
+          {
+            path: "https://file4.batdongsan.com.vn/resize/745x510/2022/02/28/20220228110557-0c0e_wm.jpg",
+          },
+          {
+            path: "https://thesaigontimes.vn/wp-content/uploads/2022/08/chungcu4.jpg",
+          },
+        ],
+        link: "/details",
+        data_id: 5,
+      },
+      {
+        id: 6,
+        place: "Huế",
+        title: "TRỌ KHÔNG LỤT tại TRẦN PHÚ - HUẾ( gần trường Đh khoa học , Đh y dược, cao đẳng y tế , Đh kinh tế, Đh ngoại ngữ)",
+        rating: 5,
+        address: "Trần Phú, Phước Vĩnh, Huế , Huế",
+        price: "3.000.000 đ",
+        images: [
+          {
+            path: "https://tromoi.com/uploads/guest/o_1hghp7f81sfi43313vt19lgiv1d.jpg",
+          },
+          {
+            path: "https://bandon.vn/uploads/thiet-ke-nha-tro-dep-2020-bandon-19.jpg",
+          },
+          {
+            path: "https://thesaigontimes.vn/wp-content/uploads/2022/08/chungcu4.jpg",
+          },
+        ],
+        link: "/details",
+        data_id: 6,
+      },
+      {
+        id: 7,
+        place: "Hồ Chí Minh",
+        title: "Phòng gần chợ Hạnh Thông Tây, có máy lạnh, nhà vệ sinh riêng",
+        rating: 5,
+        address: "Số 17, 11, Gò Vấp , Gò Vấp",
+        price: "1.700.000 đ",
+        images: [
+          {
+            path: "https://tromoi.com/uploads/guest/o_1hghp7f81sfi43313vt19lgiv1d.jpg",
+          },
+          {
+            path: "https://file4.batdongsan.com.vn/resize/745x510/2022/02/28/20220228110557-0c0e_wm.jpg",
+          },
+          {
+            path: "https://thesaigontimes.vn/wp-content/uploads/2022/08/chungcu4.jpg",
+          },
+        ],
+        link: "/details",
+        data_id: 7,
+      },
+      {
+        id: 8,
+        place: "Hà Nội",
+        title: "Phòng Trọ 25m2 Full Nội Thất Gần ĐH SPHN",
+        rating: 5,
+        address: "Ngõ 38, Dịch Vọng Hậu, Cầu Giấy, Hà Nội",
+        price: "2.600.000 đ",
+        images: [
+          {
+            path: "https://tromoi.com/uploads/guest/o_1hghp7f81sfi43313vt19lgiv1d.jpg",
+          },
+          {
+            path: "https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2022/8/17/1081975/Nha-Tro.jpg",
+          },
+          {
+            path: "https://baodautu.vn/Images/chicong/2017/10/08/do-xo-san-dat-nen-xay-nha-tro-cho-thue1507434774.jpg",
+          },
+        ],
+        link: "/details",
+        data_id: 8,
+      },
+    ],
     outstandingArea: [
       {
         id: 1,
