@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Details from "../../../../pages/Details/details";
 import APIs from "../../../API";
 import { FaRegBookmark } from "react-icons/fa";
+import { useEffect, useState } from "react";
 
 function ListRoom() {
   return (
@@ -44,7 +45,10 @@ function ListRoom() {
 }
 
 function RoomItem(props) {
-
+  let stringClass = "";
+  if(props.data_id >= 5) {
+    stringClass = "isPadTop-20"
+  }
   const handleClick = (e) => {
     e.preventDefault(); 
     
@@ -56,8 +60,9 @@ function RoomItem(props) {
   }
     
   return (
-    <div className="col col-lg-3">
-      <a href={props.link} className="listRoom__item" onClick={handleClick} data-id={props.data_id}>
+
+    <div className={`col col-lg-3 ${stringClass}`}>
+      <a href={props.link} className={"listRoom__item"} onClick={handleClick} data-id={props.data_id}>
         <div className="listRoom__item-wrapper">
           <img
             className="listRoom__item-img"

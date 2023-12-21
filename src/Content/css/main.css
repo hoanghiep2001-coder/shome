@@ -56,6 +56,26 @@ a:hover {
   padding-top: 60px;
 }
 
+.isPadTop-20 {
+  padding-top: 20px;
+}
+
+.pad-t-20 {
+  padding-top: 20px;
+}
+
+.pad-b-20 {
+  padding-bottom: 20px;
+}
+
+.pad-t-36 {
+  padding-top: 36px;
+}
+
+.pad-b-36 {
+  padding-bottom: 36px;
+}
+
 .header {
   background-color: #fff;
   padding: 10px 0;
@@ -251,6 +271,9 @@ a:hover {
 }
 .body .body__listRoom .listRoom__item .listRoom__item-content {
   padding: 20px 12px;
+  background-color: #fff;
+  border-end-end-radius: 20px;
+  border-end-start-radius: 20px;
 }
 .body .body__listRoom .listRoom__item .listRoom__item-content .listRoom__content-place {
   color: #7c7878;

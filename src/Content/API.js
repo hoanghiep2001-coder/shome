@@ -275,7 +275,7 @@ const APIs = {
         id: 1,
         place: "Hà Nội",
         title: "Phòng Trọ 25m2 Full Nội Thất Gần ĐH SPHN",
-        rating: 5,
+        rating: 2.6,
         address: "Ngõ 38, Dịch Vọng Hậu, Cầu Giấy, Hà Nội",
         price: "3.000.000 đ",
         images: [
@@ -296,7 +296,7 @@ const APIs = {
         id: 2,
         place: "Huế",
         title: "Cho thuê trọ phòng rộng rãi ngay đường quốc lộ",
-        rating: 5,
+        rating: 3.2,
         address: "Khối phố Bồng Lai, Phường Điện Minh, Điện bàn , Điện Bàn",
         price: "1.500.000 đ",
         images: [
@@ -359,7 +359,7 @@ const APIs = {
         id: 5,
         place: "Hà Nội",
         title: "Cho thuê chung cư HH linh đàm 1tr5 tr/tháng",
-        rating: 5,
+        rating: 2,
         address: " Linh Đàm, Hoàng Liệt, Hoàng Mai , Hoàng Mai",
         price: "2.100.000 đ",
         images: [
@@ -380,7 +380,7 @@ const APIs = {
         id: 6,
         place: "Huế",
         title: "TRỌ KHÔNG LỤT tại TRẦN PHÚ - HUẾ( gần trường Đh khoa học , Đh y dược, cao đẳng y tế , Đh kinh tế, Đh ngoại ngữ)",
-        rating: 5,
+        rating: 3,
         address: "Trần Phú, Phước Vĩnh, Huế , Huế",
         price: "3.000.000 đ",
         images: [

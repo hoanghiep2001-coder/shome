@@ -1,20 +1,114 @@
-.banner {
-    text-align: center;
-}
+    .body {
+        background-color: #F5F1E6;
+    }
 
-.image {
-    border-radius: 16px;
-    object-fit: cover;
-    width: 1160px;
-    height: 450px;
-}
+    .banner {
+        text-align: center;
+    }
 
-.title {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-}
+    .image {
+        border-radius: 16px;
+        object-fit: cover;
+        width: 100%;
+        height: 450px;
+    }
 
-.text {
-    font-size: 20px;
-}
+    .title {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .text {
+        font-size: 20px;
+    }
+
+    .nav_list {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .navBar_container {
+        background-color: #F5F1E6 !important;
+        border: 1px solid #a5a5a5;
+        border-radius: 12px;
+    }
+
+    .nav_Left {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav_Right {
+        display: block;
+        .nav_Text {
+            margin: 0 0 0 28px;
+            &:first-child {
+                margin: 0 0 0 28px;
+                color: #D31212;
+            }
+            &:last-child {
+                margin: 0 12px 0 32px;
+            }
+            .nav_Span {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .nav_Text {
+        font-size: 16px;
+        padding: 0;
+        display: inline-block;
+        margin: 0 12px;
+        &:first-child {
+            margin: 0 12px 0 0;
+        }
+        &.text-bold {
+            color: black;
+            font-weight: bold;
+            padding: 8px 12px;
+        }
+    }
+
+    .nav_Button {
+        padding: 14px 12px;
+        background-color: #DEB857;
+        color: #fff;
+        border-radius: 12px;
+    }
+
+    .card_optimized {
+        background-color: #F5F1E6;
+        border: #a5a5a5 1px solid;
+        color: inherit;
+    }
+
+    .list-group-item {
+        background-color: unset;
+        padding: 16px 24px 0 24px;
+        border: unset;
+    }
+
+    .card_title {
+        font-weight: 600;
+        font-size: 24px;
+    }
+
+    .card_rate {
+        padding-bottom: 16px;
+        border-bottom: 1px #a5a5a5 solid;
+    }
+
+    .start_left {
+        margin-left: 0 !important;
+    }
+
+    .onMap {
+        margin-left: 16px;
+        font-size: 14px;
+    }
+
+    .half-orange {
+        background: linear-gradient(to right, orange 50%, transparent 50%);
+      } 

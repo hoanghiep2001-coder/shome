@@ -119,6 +119,7 @@
       margin-top: 28px;
       background-color: $color-white;
       border-radius: 20px;
+      
       cursor: pointer;
       overflow: hidden;
       transition: all 0.3s ease-in-out;
@@ -143,6 +144,9 @@
       }
       .listRoom__item-content {
         padding: 20px 12px;
+        background-color: #fff; 
+        border-end-end-radius: 20px;
+        border-end-start-radius: 20px;
         .listRoom__content-place {
           color: $color-title-grey;
           font-size: 16px;
