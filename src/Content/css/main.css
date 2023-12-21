@@ -76,6 +76,14 @@ a:hover {
   padding-bottom: 36px;
 }
 
+.start_left {
+  margin-left: 0 !important;
+}
+
+.half-orange {
+  color: linear-gradient(to right, orange 50%, transparent 50%);
+}
+
 .header {
   background-color: #fff;
   padding: 10px 0;
@@ -290,6 +298,10 @@ a:hover {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.body .body__listRoom .listRoom__item .listRoom__item-content .listRoom__content-rating {
+  color: #000;
+  margin-bottom: 8px;
 }
 .body .body__listRoom .listRoom__item .listRoom__item-content .listRoom__content-address {
   color: #7c7878;

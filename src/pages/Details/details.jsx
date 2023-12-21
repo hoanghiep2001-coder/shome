@@ -14,7 +14,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import ListGroup from 'react-bootstrap/ListGroup';
 import { BsFillTelephoneOutboundFill, BsBookmarkCheckFill } from "react-icons/bs";
-import { calculateRating } from "./function/utils";
+import { calculateRating } from "../function/utils";
 const cb = classnames.bind(styles)
 
 function Details() {

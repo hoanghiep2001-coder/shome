@@ -177,7 +177,7 @@ const APIs = {
         id: 1,
         place: "Hà Nội",
         title: "Phòng Trọ 25m2 Full Nội Thất Gần ĐH SPHN",
-        rating: 5,
+        rating: 3.2,
         address: "Ngõ 38, Dịch Vọng Hậu, Cầu Giấy, Hà Nội",
         price: "3.000.000 đ",
         image:
@@ -189,7 +189,7 @@ const APIs = {
         id: 2,
         place: "Huế",
         title: "Cho thuê trọ phòng rộng rãi ngay đường quốc lộ",
-        rating: 5,
+        rating: 1.6,
         address: "Khối phố Bồng Lai, Phường Điện Minh, Điện bàn , Điện Bàn",
         price: "1.500.000 đ",
         image:
@@ -201,7 +201,7 @@ const APIs = {
         id: 3,
         place: "Hồ Chí Minh",
         title: "Phòng Full NT giá từ 3tr Quang Trung P8, GV",
-        rating: 5,
+        rating: 3.8,
         address: "Quang Trung, 8, Gò Vấp , Gò Vấp",
         price: "3.500.000 đ",
         image:
@@ -213,7 +213,7 @@ const APIs = {
         id: 4,
         place: "Hồ Chí Minh",
         title: "Phòng Trọ Mới Xây Đường 297- 22m2 An Ninh Sạch Sẽ",
-        rating: 5,
+        rating: 4.5,
         address: "3/23/19 Đường số 297, Phường Phước Long B, Quận 9, Hồ Chí Minh , Quận 9",
         price: "2.000.000 đ",
         image:
@@ -237,7 +237,7 @@ const APIs = {
         id: 6,
         place: "Huế",
         title: "TRỌ KHÔNG LỤT tại TRẦN PHÚ - HUẾ( gần trường Đh khoa học , Đh y dược, cao đẳng y tế , Đh kinh tế, Đh ngoại ngữ)",
-        rating: 5,
+        rating: 2.2,
         address: "Trần Phú, Phước Vĩnh, Huế , Huế",
         price: "3.000.000 đ",
         image:
@@ -249,7 +249,7 @@ const APIs = {
         id: 7,
         place: "Hồ Chí Minh",
         title: "Phòng gần chợ Hạnh Thông Tây, có máy lạnh, nhà vệ sinh riêng",
-        rating: 5,
+        rating: 4.3,
         address: "Số 17, 11, Gò Vấp , Gò Vấp",
         price: "1.700.000 đ",
         image:
@@ -261,7 +261,7 @@ const APIs = {
         id: 8,
         place: "Hà Nội",
         title: "Phòng Trọ 25m2 Full Nội Thất Gần ĐH SPHN",
-        rating: 5,
+        rating: 2.7,
         address: "Ngõ 38, Dịch Vọng Hậu, Cầu Giấy, Hà Nội",
         price: "2.600.000 đ",
         image:
@@ -275,7 +275,7 @@ const APIs = {
         id: 1,
         place: "Hà Nội",
         title: "Phòng Trọ 25m2 Full Nội Thất Gần ĐH SPHN",
-        rating: 2.6,
+        rating: 3.2,
         address: "Ngõ 38, Dịch Vọng Hậu, Cầu Giấy, Hà Nội",
         price: "3.000.000 đ",
         images: [
@@ -296,7 +296,7 @@ const APIs = {
         id: 2,
         place: "Huế",
         title: "Cho thuê trọ phòng rộng rãi ngay đường quốc lộ",
-        rating: 3.2,
+        rating: 1.6,
         address: "Khối phố Bồng Lai, Phường Điện Minh, Điện bàn , Điện Bàn",
         price: "1.500.000 đ",
         images: [
@@ -317,7 +317,7 @@ const APIs = {
         id: 3,
         place: "Hồ Chí Minh",
         title: "Phòng Full NT giá từ 3tr Quang Trung P8, GV",
-        rating: 5,
+        rating: 3.8,
         address: "Quang Trung, 8, Gò Vấp , Gò Vấp",
         price: "3.500.000 đ",
         images: [
@@ -338,7 +338,7 @@ const APIs = {
         id: 4,
         place: "Hồ Chí Minh",
         title: "Phòng Trọ Mới Xây Đường 297- 22m2 An Ninh Sạch Sẽ",
-        rating: 5,
+        rating: 4.6,
         address: "3/23/19 Đường số 297, Phường Phước Long B, Quận 9, Hồ Chí Minh , Quận 9",
         price: "2.000.000 đ",
         images: [
@@ -359,7 +359,7 @@ const APIs = {
         id: 5,
         place: "Hà Nội",
         title: "Cho thuê chung cư HH linh đàm 1tr5 tr/tháng",
-        rating: 2,
+        rating: 5,
         address: " Linh Đàm, Hoàng Liệt, Hoàng Mai , Hoàng Mai",
         price: "2.100.000 đ",
         images: [
@@ -380,7 +380,7 @@ const APIs = {
         id: 6,
         place: "Huế",
         title: "TRỌ KHÔNG LỤT tại TRẦN PHÚ - HUẾ( gần trường Đh khoa học , Đh y dược, cao đẳng y tế , Đh kinh tế, Đh ngoại ngữ)",
-        rating: 3,
+        rating: 2.2,
         address: "Trần Phú, Phước Vĩnh, Huế , Huế",
         price: "3.000.000 đ",
         images: [
@@ -401,7 +401,7 @@ const APIs = {
         id: 7,
         place: "Hồ Chí Minh",
         title: "Phòng gần chợ Hạnh Thông Tây, có máy lạnh, nhà vệ sinh riêng",
-        rating: 5,
+        rating: 4.3,
         address: "Số 17, 11, Gò Vấp , Gò Vấp",
         price: "1.700.000 đ",
         images: [
@@ -422,7 +422,7 @@ const APIs = {
         id: 8,
         place: "Hà Nội",
         title: "Phòng Trọ 25m2 Full Nội Thất Gần ĐH SPHN",
-        rating: 5,
+        rating: 2.7,
         address: "Ngõ 38, Dịch Vọng Hậu, Cầu Giấy, Hà Nội",
         price: "2.600.000 đ",
         images: [

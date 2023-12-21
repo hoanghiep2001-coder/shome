@@ -4,6 +4,7 @@ import Details from "../../../../pages/Details/details";
 import APIs from "../../../API";
 import { FaRegBookmark } from "react-icons/fa";
 import { useEffect, useState } from "react";
+import { calculateRating } from "../../../../pages/function/utils";
 
 function ListRoom() {
   return (
@@ -46,6 +47,7 @@ function ListRoom() {
 
 function RoomItem(props) {
   let stringClass = "";
+  const rating = calculateRating(props.rating);
   if(props.data_id >= 5) {
     stringClass = "isPadTop-20"
   }
@@ -73,6 +75,7 @@ function RoomItem(props) {
         <div className="listRoom__item-content">
           <h3 className="listRoom__content-place">{props.place}</h3>
           <h3 className="listRoom__content-title">{props.title}</h3>
+          <div className="listRoom__content-rating">{rating}</div>
           <p className="listRoom__content-address">{props.address}</p>
           <div className="d-lg-flex justify-content-between">
             <h3 className="listRoom__item-price">{props.price}</h3>

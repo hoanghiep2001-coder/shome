@@ -163,6 +163,10 @@
           overflow: hidden;
           text-overflow: ellipsis;
         }
+        .listRoom__content-rating {
+          color: #000;
+          margin-bottom: 8px;
+        }
         .listRoom__content-address {
           color: $color-title-grey;
           font-size: 14px;
