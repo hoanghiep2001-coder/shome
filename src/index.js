@@ -8,11 +8,13 @@ import "./Content/css/main.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+import ScrollToTop from "./pages/function/scrollToTop.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
+    <ScrollToTop />
   </React.StrictMode>
 );
 

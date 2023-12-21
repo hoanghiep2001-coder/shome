@@ -1,0 +1,56 @@
+.button {
+    z-index: 10000;
+   position: fixed;
+   bottom: 40px;
+   right: 40px; 
+   cursor: pointer;
+}
+
+.button-body {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    color: #FFCE53;
+    font-size: 24px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+}
+    
+.hide {
+    animation-name: hide; /* Tên animation bạn đã định nghĩa */
+    animation-duration: 1s; /* Thời gian hoàn thành animation (ví dụ: 2 giây) */
+    animation-timing-function: ease; /* Hàm đồng bộ hoặc không đồng bộ (ví dụ: ease, linear, ease-in-out) */
+    animation-delay: 0s; /* Thời gian trì hoãn trước khi bắt đầu animation (ví dụ: 0 giây) */
+    animation-iteration-count: 1; /* Số lần lặp animation (ví dụ: infinite hoặc số lần) */
+    animation-direction: normal; /* Hướng lặp lại của animation (normal, reverse, alternate) */
+    animation-fill-mode: forwards; 
+}
+
+.show {
+    animation-name: show; /* Tên animation bạn đã định nghĩa */
+    animation-duration: 1s; /* Thời gian hoàn thành animation (ví dụ: 2 giây) */
+    animation-timing-function: ease; /* Hàm đồng bộ hoặc không đồng bộ (ví dụ: ease, linear, ease-in-out) */
+    animation-delay: 0s; /* Thời gian trì hoãn trước khi bắt đầu animation (ví dụ: 0 giây) */
+    animation-iteration-count: 1; /* Số lần lặp animation (ví dụ: infinite hoặc số lần) */
+    animation-direction: normal; /* Hướng lặp lại của animation (normal, reverse, alternate) */
+    animation-fill-mode: forwards; 
+}
+
+@keyframes hide {
+    from {
+        opacity: 1;
+    } to {
+        opacity: 0;
+    }
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}

@@ -51,6 +51,7 @@ function Details() {
                         </Navbar>
                     </div>
 
+
                     <Row className={cb("row")}>
                         <Col xl={9}>
                             <Card className={cb("card_optimized")}>
@@ -63,7 +64,7 @@ function Details() {
                                         </div>
                                     </ListGroup.Item>
                                     <ListGroup.Item className={cb("list-group-item")}>
-                                        <p>Căn phòng thiết kế xây dựng gồm: cửa chính, cửa sổ, cửa nhà vệ sinh chắc chắn, phòng
+                                        <p className="mb-4">Căn phòng thiết kế xây dựng gồm: cửa chính, cửa sổ, cửa nhà vệ sinh chắc chắn, phòng
                                             thoáng mát cùng cách bố trí nội thất gọn gàng, tiện nghi cho người ở.</p>
                                         <p>
                                             <BsBookmarkCheckFill />

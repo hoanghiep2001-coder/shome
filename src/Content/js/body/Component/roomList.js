@@ -1,9 +1,5 @@
-
-import { Link } from "react-router-dom";
-import Details from "../../../../pages/Details/details";
 import APIs from "../../../API";
 import { FaRegBookmark } from "react-icons/fa";
-import { useEffect, useState } from "react";
 import { calculateRating } from "../../../../pages/function/utils";
 
 function ListRoom() {

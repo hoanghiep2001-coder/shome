@@ -447,6 +447,7 @@ a:hover {
   padding: 140px 0;
 }
 .body .body__service .body__service-wrapper .body__service-row {
+  border-radius: 16px;
   background-color: rgba(52, 51, 51, 0.5);
   padding: 40px 20px;
   align-items: center;
@@ -455,7 +456,6 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 32px;
 }
 .body .body__service .body__service-wrapper .body__service-row .body__service-actions .service_actions-icon {
   font-size: 26px;
@@ -485,6 +485,7 @@ a:hover {
   border-radius: 0px;
   background-color: rgba(255, 255, 255, 0.15);
   color: #fff;
+  border-radius: 12px;
 }
 .body .body__service .body__service-wrapper .service__form-control::placeholder {
   color: #fff;
