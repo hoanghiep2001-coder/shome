@@ -22,13 +22,17 @@ function ListRoom() {
 
   // Hàm xử lý khi click vào nút phân trang
   const handlePaginationClick = (e) => {
-    setCurrentPage(Number(e.target.textContent)); 
-    // let pageItems = document.querySelectorAll(".pagination_Item");
-    // pageItems.forEach(page => {
-    //   console.log(page);
-    //   page.classList.remove("active");
-    // });
-    // e.target.classList.add("active");
+    e.preventDefault();
+    let dataPage = e.currentTarget.getAttribute("data-page");
+    Number(dataPage)
+    if(dataPage) {
+      if(dataPage > 3 || dataPage < 1) {
+        return;
+      }
+      setCurrentPage(dataPage); 
+    } else {
+      setCurrentPage(Number(e.target.textContent)); 
+    }
   };
 
 
@@ -61,21 +65,20 @@ function ListRoom() {
           })}
         </div>
         <Pagination className={cb("pagination_Container", "m-4", "me-0")}>
-          {/* Các nút phân trang */}
-          <Pagination.First />
-          <Pagination.Prev />
+          <Pagination.First data-page={1} onClick={handlePaginationClick}/>
+          <Pagination.Prev data-page={Number(currentPage) - 1} onClick={handlePaginationClick}/>
           {Array.from({ length: Math.ceil(APIs.bodyAPIs.roomList.length / itemsPerPage) }).map((_, index) => (
             <Pagination.Item 
             className="pagination_Item"
+            active={Number(currentPage) === index + 1}
               key={index + 1} 
-              // onClick={() => handlePaginationClick(index + 1)}
               onClick={handlePaginationClick}
             >
               {index + 1}
             </Pagination.Item>
           ))}
-          <Pagination.Next />
-          <Pagination.Last />
+          <Pagination.Next data-page={Number(currentPage) + 1} onClick={handlePaginationClick}/>
+          <Pagination.Last data-page={3} onClick={handlePaginationClick}/>
         </Pagination>
       </div>
     </div>
