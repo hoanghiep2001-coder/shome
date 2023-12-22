@@ -24,3 +24,8 @@ export const calculateRating = (rating) => {
 
     return icons;
 };
+
+
+export const ScrollToMap = () => {
+    
+}

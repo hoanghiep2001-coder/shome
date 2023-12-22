@@ -291,6 +291,38 @@ const APIs = {
         ],
         link: "/details",
         data_id: 1,
+        describes: [
+          {
+            id: 1,
+            content: "Diện tích căn phòng: Phòng 1 ngủ 30m2",
+          },
+          {
+            id: 2,
+            content: "Nội thất cơ bản gồm: Điều hòa, nóng lạnh, giường ngủ, tủ quần áo, rèm cửa.",
+          },
+          {
+            id: 3,
+            content: "Chi phí điện nước: Áp dụng tính giá nhà nước (tiêu chuẩn nhà nước)",
+          },
+          {
+            id: 4,
+            content: "An ninh tòa nhà: Camera theo dõi 24h; Khóa vân tay bảo mật",
+          },
+          {
+            id: 5,
+            content: "Tiện ích tòa nhà: Khu để xe miễn phí; Máy giặt chung miễn phí; Tự do đi lại 24h, không chung chủ.",
+          },
+          {
+            id: 6,
+            content: "Thủ tục - giấy tờ: Hợp đồng thuê nhà, hợp đồng đặt cọc, thủ tục đăng ký tạm trú tạm vắng,... Đội ngũ SHome sẽ hỗ trợ khách hàng hoàn thành tất cả",
+          },
+          {
+            id: 7,
+            content: "Phòng trọ phù hợp dành cho các bạn sinh viên, người đi làm."
+          },
+
+
+        ]
       },
       {
         id: 2,
@@ -311,7 +343,39 @@ const APIs = {
           },
         ],
         link: "/details",
-        data_id: 2
+        data_id: 2,
+        describes: [
+          {
+            id: 1,
+            content: "Diện tích căn phòng: Phòng 1 ngủ 30m2",
+          },
+          {
+            id: 2,
+            content: "Nội thất cơ bản gồm: Điều hòa, nóng lạnh, giường ngủ, tủ quần áo, rèm cửa.",
+          },
+          {
+            id: 3,
+            content: "Chi phí điện nước: 4k/số , nước 15k/khối",
+          },
+          {
+            id: 4,
+            content: "An ninh tòa nhà: Camera theo dõi 24h; Khóa then chốt",
+          },
+          {
+            id: 5,
+            content: "Tiện ích tòa nhà: Để xe tầng 1, giặt giũ tầng 4, nấu ăn trong phòng.",
+          },
+          {
+            id: 6,
+            content: "Thủ tục - giấy tờ: Hợp đồng thuê nhà, hợp đồng đặt cọc, thủ tục đăng ký tạm trú tạm vắng,... Đội ngũ SHome sẽ hỗ trợ khách hàng hoàn thành tất cả",
+          },
+          {
+            id: 7,
+            content: "Phòng trọ phù hợp dành cho các bạn sinh viên, người đi làm."
+          },
+
+
+        ]
       },
       {
         id: 3,
@@ -333,6 +397,36 @@ const APIs = {
         ],
         link: "/details",
         data_id: 3,
+        describes: [
+          {
+            id: 1,
+            content: "Diện tích căn phòng: 35m2 khép kín",
+          },
+          {
+            id: 2,
+            content: "Nội thất cơ bản gồm: Điều hòa, nóng lạnh, giường ngủ, tủ quần áo, rèm cửa.",
+          },
+          {
+            id: 3,
+            content: "Chi phí điện nước: 3.5k/số , nước 25k/khối",
+          },
+          {
+            id: 4,
+            content: "An ninh tòa nhà: Camera nhà để xe; Công an Phường ngay đối diện",
+          },
+          {
+            id: 5,
+            content: "Tiện ích tòa nhà: Thoải mái không chung chủ, bến xe buýt và công an gần nhà, cực kỳ an toàn và tiện nghi",
+          },
+          {
+            id: 6,
+            content: "Thủ tục - giấy tờ: Hợp đồng thuê nhà, hợp đồng đặt cọc, thủ tục đăng ký tạm trú tạm vắng,... Đội ngũ SHome sẽ hỗ trợ khách hàng hoàn thành tất cả",
+          },
+          {
+            id: 7,
+            content: "Phòng trọ phù hợp dành cho các bạn sinh viên, người đi làm."
+          },
+        ]
       },
       {
         id: 4,
@@ -354,6 +448,36 @@ const APIs = {
         ],
         link: "/details",
         data_id: 4,
+        describes: [
+          {
+            id: 1,
+            content: "Diện tích căn phòng: 35m2 khép kín",
+          },
+          {
+            id: 2,
+            content: "Nội thất cơ bản gồm: nóng lạnh, giường ngủ.",
+          },
+          {
+            id: 3,
+            content: "Chi phí điện nước: 4k/số , nước 70k/ người",
+          },
+          {
+            id: 4,
+            content: "An ninh tòa nhà: Camera nhà để xe; Công an Phường ngay đối diện",
+          },
+          {
+            id: 5,
+            content: "Tiện ích tòa nhà: Giao thoa giữa các trường đại học, khu công nghiệp, đầu ngõ có quán nét",
+          },
+          {
+            id: 6,
+            content: "Thủ tục - giấy tờ: Hợp đồng thuê nhà, hợp đồng đặt cọc, thủ tục đăng ký tạm trú tạm vắng,... Đội ngũ SHome sẽ hỗ trợ khách hàng hoàn thành tất cả",
+          },
+          {
+            id: 7,
+            content: "Phòng trọ phù hợp dành cho các bạn sinh viên, người đi làm."
+          },
+        ]
       },
       {
         id: 5,
@@ -375,6 +499,36 @@ const APIs = {
         ],
         link: "/details",
         data_id: 5,
+        describes: [
+          {
+            id: 1,
+            content: "Diện tích căn phòng: 35m2 khép kín",
+          },
+          {
+            id: 2,
+            content: "Nội thất cơ bản gồm: nóng lạnh, giường ngủ.",
+          },
+          {
+            id: 3,
+            content: "Chi phí điện nước: 4k/số , nước 70k/ người",
+          },
+          {
+            id: 4,
+            content: "An ninh tòa nhà: Camera nhà để xe; Công an Phường ngay đối diện",
+          },
+          {
+            id: 5,
+            content: "Tiện ích tòa nhà: Giao thoa giữa các trường đại học, khu công nghiệp, đầu ngõ có quán nét",
+          },
+          {
+            id: 6,
+            content: "Thủ tục - giấy tờ: Hợp đồng thuê nhà, hợp đồng đặt cọc, thủ tục đăng ký tạm trú tạm vắng,... Đội ngũ SHome sẽ hỗ trợ khách hàng hoàn thành tất cả",
+          },
+          {
+            id: 7,
+            content: "Phòng trọ phù hợp dành cho các bạn sinh viên, người đi làm."
+          },
+        ]
       },
       {
         id: 6,
@@ -396,6 +550,36 @@ const APIs = {
         ],
         link: "/details",
         data_id: 6,
+        describes: [
+          {
+            id: 1,
+            content: "Diện tích căn phòng: 35m2 khép kín",
+          },
+          {
+            id: 2,
+            content: "Nội thất cơ bản gồm: nóng lạnh, giường ngủ.",
+          },
+          {
+            id: 3,
+            content: "Chi phí điện nước: 4k/số , nước 70k/ người",
+          },
+          {
+            id: 4,
+            content: "An ninh tòa nhà: Camera nhà để xe; Công an Phường ngay đối diện",
+          },
+          {
+            id: 5,
+            content: "Tiện ích tòa nhà: Giao thoa giữa các trường đại học, khu công nghiệp, đầu ngõ có quán nét",
+          },
+          {
+            id: 6,
+            content: "Thủ tục - giấy tờ: Hợp đồng thuê nhà, hợp đồng đặt cọc, thủ tục đăng ký tạm trú tạm vắng,... Đội ngũ SHome sẽ hỗ trợ khách hàng hoàn thành tất cả",
+          },
+          {
+            id: 7,
+            content: "Phòng trọ phù hợp dành cho các bạn sinh viên, người đi làm."
+          },
+        ]
       },
       {
         id: 7,
@@ -417,6 +601,36 @@ const APIs = {
         ],
         link: "/details",
         data_id: 7,
+        describes: [
+          {
+            id: 1,
+            content: "Diện tích căn phòng: 35m2 khép kín",
+          },
+          {
+            id: 2,
+            content: "Nội thất cơ bản gồm: nóng lạnh, giường ngủ.",
+          },
+          {
+            id: 3,
+            content: "Chi phí điện nước: 4k/số , nước 70k/ người",
+          },
+          {
+            id: 4,
+            content: "An ninh tòa nhà: Camera nhà để xe; Công an Phường ngay đối diện",
+          },
+          {
+            id: 5,
+            content: "Tiện ích tòa nhà: Giao thoa giữa các trường đại học, khu công nghiệp, đầu ngõ có quán nét",
+          },
+          {
+            id: 6,
+            content: "Thủ tục - giấy tờ: Hợp đồng thuê nhà, hợp đồng đặt cọc, thủ tục đăng ký tạm trú tạm vắng,... Đội ngũ SHome sẽ hỗ trợ khách hàng hoàn thành tất cả",
+          },
+          {
+            id: 7,
+            content: "Phòng trọ phù hợp dành cho các bạn sinh viên, người đi làm."
+          },
+        ]
       },
       {
         id: 8,
@@ -438,6 +652,36 @@ const APIs = {
         ],
         link: "/details",
         data_id: 8,
+        describes: [
+          {
+            id: 1,
+            content: "Diện tích căn phòng: 35m2 khép kín",
+          },
+          {
+            id: 2,
+            content: "Nội thất cơ bản gồm: nóng lạnh, giường ngủ.",
+          },
+          {
+            id: 3,
+            content: "Chi phí điện nước: 4k/số , nước 70k/ người",
+          },
+          {
+            id: 4,
+            content: "An ninh tòa nhà: Camera nhà để xe; Công an Phường ngay đối diện",
+          },
+          {
+            id: 5,
+            content: "Tiện ích tòa nhà: Giao thoa giữa các trường đại học, khu công nghiệp, đầu ngõ có quán nét",
+          },
+          {
+            id: 6,
+            content: "Thủ tục - giấy tờ: Hợp đồng thuê nhà, hợp đồng đặt cọc, thủ tục đăng ký tạm trú tạm vắng,... Đội ngũ SHome sẽ hỗ trợ khách hàng hoàn thành tất cả",
+          },
+          {
+            id: 7,
+            content: "Phòng trọ phù hợp dành cho các bạn sinh viên, người đi làm."
+          },
+        ]
       },
     ],
     outstandingArea: [

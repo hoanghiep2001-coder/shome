@@ -2,8 +2,6 @@
 import React from "react";
 import Header from "../../Content/js/header/header";
 import Footer from "../../Content/js/footer/footer";
-import classnames from "classnames/bind";
-import styles from "./details.module.scss";
 import APIs from "../../Content/API";
 import Image from 'react-bootstrap/Image';
 import Container from 'react-bootstrap/Container';
@@ -15,6 +13,9 @@ import Navbar from 'react-bootstrap/Navbar';
 import ListGroup from 'react-bootstrap/ListGroup';
 import { BsFillTelephoneOutboundFill, BsBookmarkCheckFill } from "react-icons/bs";
 import { calculateRating } from "../function/utils";
+import classnames from "classnames/bind";
+import styles from "./details.module.scss";
+import GoogleMap from "./components/googleMap/googleMap";
 const cb = classnames.bind(styles)
 
 function Details() {
@@ -66,10 +67,14 @@ function Details() {
                                     <ListGroup.Item className={cb("list-group-item")}>
                                         <p className="mb-4">Căn phòng thiết kế xây dựng gồm: cửa chính, cửa sổ, cửa nhà vệ sinh chắc chắn, phòng
                                             thoáng mát cùng cách bố trí nội thất gọn gàng, tiện nghi cho người ở.</p>
-                                        <p>
-                                            <BsBookmarkCheckFill />
-
-                                        </p>
+                                        <div>
+                                            {result.describes.map(describe => {
+                                                return <div className={cb("card_describe")}>
+                                                    <BsBookmarkCheckFill fontSize={20} color="black"/>
+                                                    <p className={cb("ms-3", "content")}>{describe.content}</p>
+                                                </div>
+                                            })}
+                                        </div>
                                     </ListGroup.Item>
                                 </ListGroup>
                             </Card>
@@ -77,7 +82,7 @@ function Details() {
                         <Col xl={3} className="">
                             <Card
                                 text="white"
-                                className={cb("mb-2", "card_optimized")}
+                                className={cb("mb-3", "card_optimized")}
                             >
                                 <Card.Header className={cb("card-header", "nav_Text", "text-bold", "m-0")}>LIÊN HỆ CHỦ TRỌ</Card.Header>
                                 <Card.Body>
@@ -90,6 +95,28 @@ function Details() {
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
+
+                            <Card
+                                text="white"
+                                className={cb("mb-3", "card_optimized")}
+                            >
+                                <Card.Header className={cb("card-header", "nav_Text", "text-bold", "m-0")}>8,2 Hài Lòng</Card.Header>
+                                <Card.Body>
+                                    <Card.Subtitle as={"a"} href="#" className={cb("mb-2", "text-muted", "card_subtitle")}>5 bài đánh giá</Card.Subtitle>
+                                    <div className="d-flex flex-lg-wrap mt-3">
+                                        <br></br>
+                                        <Card.Link className={cb("card_link")} href="#">Dịch vụ 7,4</Card.Link>
+                                        <Card.Link className={cb("card_link")} href="#">Tiện nghi 7,5</Card.Link>
+                                        <Card.Link className={cb("card_link")} href="#">Vị trí 8,3</Card.Link>
+                                        <Card.Link className={cb("card_link")} href="#">An ninh 8,1</Card.Link>
+                                        <Card.Link className={cb("card_link")} href="#">Sạch sẽ 7,8</Card.Link>
+                                        <Card.Link className={cb("card_link")} href="#">Đáng giá tiền 7,2</Card.Link>         
+                                    </div>
+                               
+                                </Card.Body>
+                            </Card>
+
+                            <GoogleMap/>
                         </Col>
                     </Row>
                 </Container>

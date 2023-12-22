@@ -1,0 +1,27 @@
+.card_optimized {
+    background-color: #F5F1E6;
+    border: #a5a5a5 1px solid;
+    color: inherit;
+}
+
+.list-group-item {
+    background-color: unset;
+    padding: 16px 24px 0 24px;
+    border: unset;
+}
+
+
+.nav_Text {
+    font-size: 16px;
+    padding: 0;
+    display: inline-block;
+    margin: 0 12px;
+    &:first-child {
+        margin: 0 12px 0 0;
+    }
+    &.text-bold {
+        color: black;
+        font-weight: bold;
+        padding: 8px 12px;
+    }
+}

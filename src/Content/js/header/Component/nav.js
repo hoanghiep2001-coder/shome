@@ -1,6 +1,5 @@
 import APIs from "../../../API";
-import userImage from "../../../image/icon/icon_login.png";
-
+import { FaRegUserCircle  } from "react-icons/fa";
 function Navigation() {
   return (
     <div className="d-lg-flex align-items-lg-center">
@@ -28,7 +27,7 @@ function Navigation() {
       </ul>
       <div className="header__user">
         <a className="header__user-link" href="#">
-          <img className="header__user-img" alt="user" src={userImage} />
+          <FaRegUserCircle  fontSize={36} color="orange" className="ms-4"/>
         </a>
       </div>
     </div>

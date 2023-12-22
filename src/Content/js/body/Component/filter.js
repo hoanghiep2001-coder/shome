@@ -5,29 +5,27 @@ import { FaAngleDown } from "react-icons/fa";
 import searchIcon from "../../../image/icon/search-icon.svg";
 import Button from "../../../../components/Button";
 import DropdownComponent from "../../../../components/Dropdown";
-import { React, useState, useEffect } from "react";
+import { React, useEffect } from "react";
 
 function Filter(props) {
-  const [bodyClass, setBodyClass] = useState(
-    "container body__filter d-lg-flex justify-content-center"
-  );
   useEffect(() => {
-    const filterCompOffsetTop =
-      document.querySelector("#filterComponent").offsetTop;
+    const filterComp = document.querySelector("#filterComponent");
     const handleStickyFilterComp = () => {
-      if (window.scrollY > filterCompOffsetTop) {
-        setBodyClass(
-          "container body__filter d-lg-flex justify-content-center is-scrollDown"
-        );
+      if (window.scrollY > 500) {
+        filterComp.classList.add("is-scrollDown");
       } else {
-        setBodyClass("container body__filter d-lg-flex justify-content-center");
+        filterComp.classList.remove("is-scrollDown");
       }
     };
 
     window.addEventListener("scroll", handleStickyFilterComp);
+
+    return () => {
+      window.removeEventListener("scroll", handleStickyFilterComp);
+  };
   }, []);
   return (
-    <div id="filterComponent" className={bodyClass}>
+    <div id="filterComponent" className="container body__filter d-lg-flex justify-content-center no-scroll">
       <form
         action=""
         method="POST"
@@ -70,7 +68,7 @@ function Filter(props) {
                   )
                 }
                 arrownDownIcon={
-                  index != 4 ? <FaAngleDown className="arrowDown-icon" /> : ""
+                  index !== 4 ? <FaAngleDown className="arrowDown-icon" /> : ""
                 }
                 dropDownClass="filter__nav-dropdownMenu dropdown-menu"
                 chilrenDropdownClass="filter__nav-dropdownItem"

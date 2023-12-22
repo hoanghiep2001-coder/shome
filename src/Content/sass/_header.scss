@@ -1,3 +1,4 @@
+
 .header {
   background-color: $color-white;
   padding: 10px 0;
@@ -6,14 +7,26 @@
   right: 0;
   left: 0;
   z-index: 1000;
-  transition: all 0.3s ease-in-out;
+  animation-name: sticky; /* Tên animation bạn đã định nghĩa */
+  animation-duration: 0.5s; /* Thời gian hoàn thành animation (ví dụ: 2 giây) */
+  animation-timing-function: ease; /* Hàm đồng bộ hoặc không đồng bộ (ví dụ: ease, linear, ease-in-out) */
+  animation-delay: 0s; /* Thời gian trì hoãn trước khi bắt đầu animation (ví dụ: 0 giây) */
+  animation-iteration-count: 1; /* Số lần lặp animation (ví dụ: infinite hoặc số lần) */
+  animation-direction: normal; /* Hướng lặp lại của animation (normal, reverse, alternate) */
+  animation-fill-mode: forwards; 
   box-shadow: 0 0 5px 0px rgb(0 0 0 / 20%);
   &.is-sticky {
+    animation-name: noSticky; /* Tên animation bạn đã định nghĩa */
+    animation-duration: 0.5s; /* Thời gian hoàn thành animation (ví dụ: 2 giây) */
+    animation-timing-function: ease; /* Hàm đồng bộ hoặc không đồng bộ (ví dụ: ease, linear, ease-in-out) */
+    animation-delay: 0s; /* Thời gian trì hoãn trước khi bắt đầu animation (ví dụ: 0 giây) */
+    animation-iteration-count: 1; 
+    animation-direction: normal; /* Hướng lặp lại của animation (normal, reverse, alternate) */
+    animation-fill-mode: forwards; 
     .header__container {
       padding: 10px 12px;
       .header__homePage {
         .icon-LOGO_demo {
-          // font-size: 80px;
           width: $logo-default-width-is-sticky;
           color: $color-button;
         }
@@ -58,7 +71,6 @@
     }
 
     .header__user {
-      margin-left: 8px;
       .header__user-link {
         .header__user-img {
           width: 50px;
@@ -67,7 +79,20 @@
       }
     }
   }
-  &.is-sticky {
+}
+
+@keyframes sticky {
+  from {
     padding: 0;
+  } to {
+    padding: 10px 0;
+  }
+}
+
+@keyframes noSticky {
+  from {
+      padding: 0;
+  } to {
+      padding: 0;
   }
 }
