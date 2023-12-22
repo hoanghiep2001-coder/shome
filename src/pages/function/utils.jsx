@@ -32,7 +32,7 @@ export const ScrollToMap = () => {
 
 export const caculateItemsPadding = (id) => {
     let string = "";
-    if ((id >= 5 && id <= 8) || (id >= 13 && id <= 16)) {
+    if ((id >= 5 && id <= 8) || (id >= 13 && id <= 16) || (id >= 21 && id <= 24) || (id >= 29 && id <= 32)) {
         string = "isPadTop-20"
     }
 

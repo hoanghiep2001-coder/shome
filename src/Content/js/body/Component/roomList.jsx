@@ -1,12 +1,13 @@
 
-import Pagination from 'react-bootstrap/Pagination';
-import { FaRegBookmark } from "react-icons/fa";
-import { caculateItemsPadding, calculateRating } from "../../../../pages/function/utils";
+
 import classnames from "classnames/bind";
 import styles from "../scss/roomList.module.scss";
-import APIs from '../../../data/API';
-import { Constant } from '../../../data/constant';
-import { useState } from 'react';
+import { PaginationComp } from "./Pagination/Pagination";
+import { useState } from "react";
+import {Constant} from "../../../data/constant";
+import APIs from "../../../data/API";
+import { RoomItem } from "./RoomItem/RoomItem";
+
 
 const cb = classnames.bind(styles);
 
@@ -18,23 +19,25 @@ function ListRoom() {
   const itemsPerPage = paginationData.itemToShow;
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = APIs.bodyAPIs.roomList.slice(indexOfFirstItem, indexOfLastItem);
+  const currentItems = APIs.bodyAPIs.roomList.slice(
+    indexOfFirstItem,
+    indexOfLastItem
+  );
 
   // Hàm xử lý khi click vào nút phân trang
   const handlePaginationClick = (e) => {
     e.preventDefault();
     let dataPage = e.currentTarget.getAttribute("data-page");
-    Number(dataPage)
-    if(dataPage) {
-      if(dataPage > 3 || dataPage < 1) {
+    Number(dataPage);
+    if (dataPage) {
+      if (dataPage > 3 || dataPage < 1) {
         return;
       }
-      setCurrentPage(dataPage); 
+      setCurrentPage(dataPage);
     } else {
-      setCurrentPage(Number(e.target.textContent)); 
+      setCurrentPage(Number(e.target.textContent));
     }
   };
-
 
   return (
     <div className="body__listRoom">
@@ -57,70 +60,20 @@ function ListRoom() {
                 price={item.price}
                 address={item.address}
                 place={item.place}
-                image={item.image}
+                image={item.images[0].path}
                 link={item.link}
                 data_id={item.data_id}
               />
             );
           })}
         </div>
-        <Pagination className={cb("pagination_Container", "m-4", "me-0")}>
-          <Pagination.First data-page={1} onClick={handlePaginationClick}/>
-          <Pagination.Prev data-page={Number(currentPage) - 1} onClick={handlePaginationClick}/>
-          {Array.from({ length: Math.ceil(APIs.bodyAPIs.roomList.length / itemsPerPage) }).map((_, index) => (
-            <Pagination.Item 
-            className="pagination_Item"
-            active={Number(currentPage) === index + 1}
-              key={index + 1} 
-              onClick={handlePaginationClick}
-            >
-              {index + 1}
-            </Pagination.Item>
-          ))}
-          <Pagination.Next data-page={Number(currentPage) + 1} onClick={handlePaginationClick}/>
-          <Pagination.Last data-page={3} onClick={handlePaginationClick}/>
-        </Pagination>
-      </div>
-    </div>
-  );
-}
-
-function RoomItem(props) {
-  const rating = calculateRating(props.rating);
-  const padding = caculateItemsPadding(props.data_id)
-
-  const handleClick = (e) => {
-    e.preventDefault();
-
-    const anchorElement = e.currentTarget;
-    const dataId = anchorElement.getAttribute('data-id');
-
-    sessionStorage.setItem(`detailsPage`, dataId);
-    window.location.assign("/details");
-  }
-
-  return (
-
-    <div className={`col col-lg-3 ${padding}`}>
-      <a href={props.link} className={"listRoom__item"} onClick={handleClick} data-id={props.data_id}>
-        <div className="listRoom__item-wrapper">
-          <img
-            className="listRoom__item-img"
-            src={props.image}
-            alt={props.image}
+          <PaginationComp 
+            currentPage={currentPage}
+            handlePaginationClick={handlePaginationClick}
+            itemsPerPage={itemsPerPage}
+            roomLengthAPI={APIs.bodyAPIs.roomList.length}
           />
-        </div>
-        <div className="listRoom__item-content">
-          <h3 className="listRoom__content-place">{props.place}</h3>
-          <h3 className="listRoom__content-title">{props.title}</h3>
-          <div className="listRoom__content-rating">{rating}</div>
-          <p className="listRoom__content-address">{props.address}</p>
-          <div className="d-lg-flex justify-content-between">
-            <h3 className="listRoom__item-price">{props.price}</h3>
-            <FaRegBookmark className="listRoom__item-mark" />
-          </div>
-        </div>
-      </a>
+      </div>
     </div>
   );
 }
