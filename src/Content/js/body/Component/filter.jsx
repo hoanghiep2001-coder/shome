@@ -1,4 +1,3 @@
-import APIs from "../../../API";
 
 import { IoLocationOutline } from "react-icons/io5";
 import { FaAngleDown } from "react-icons/fa";
@@ -6,6 +5,7 @@ import searchIcon from "../../../image/icon/search-icon.svg";
 import Button from "../../../../components/Button";
 import DropdownComponent from "../../../../components/Dropdown";
 import { React, useEffect } from "react";
+import APIs from "../../../data/API";
 
 function Filter(props) {
   useEffect(() => {
@@ -22,7 +22,7 @@ function Filter(props) {
 
     return () => {
       window.removeEventListener("scroll", handleStickyFilterComp);
-  };
+    };
   }, []);
   return (
     <div id="filterComponent" className="container body__filter d-lg-flex justify-content-center no-scroll">

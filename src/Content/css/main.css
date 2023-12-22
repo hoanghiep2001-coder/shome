@@ -208,7 +208,7 @@ a:hover {
 }
 .body .body__filter.is-scrollDown {
   position: sticky;
-  top: 89px;
+  top: 88px;
   height: auto;
   z-index: 1000;
   left: 0;
@@ -348,6 +348,17 @@ a:hover {
   font-family: "BeVietnamPro-SemiBold";
   color: #0c1c56;
   font-size: 18px;
+}
+.body .body__listRoom .pagination_Container {
+  justify-content: center;
+}
+.body .body__listRoom .pagination_Container .page-link {
+  color: #000;
+}
+.body .body__listRoom .pagination_Container .active .page-link {
+  background-color: #eabd4d;
+  border: 1px solid #eabd4d;
+  color: #fff;
 }
 .body .body__aboutUs {
   padding: 40px 0 70px;

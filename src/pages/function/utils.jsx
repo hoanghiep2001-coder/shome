@@ -6,7 +6,7 @@ export const calculateRating = (rating) => {
     const icons = [];
 
     for (let i = 0; i < numberOfFullStars; i++) {
-        if(i === 0) {
+        if (i === 0) {
             icons.push(<BsFillStarFill className="m-1 start_left" color="orange" key={i} />);
         } else {
             icons.push(<BsFillStarFill className="m-1" color="orange" key={i} />);
@@ -27,5 +27,14 @@ export const calculateRating = (rating) => {
 
 
 export const ScrollToMap = () => {
-    
+
+}
+
+export const caculateItemsPadding = (id) => {
+    let string = "";
+    if ((id >= 5 && id <= 8) || (id >= 13 && id <= 16)) {
+        string = "isPadTop-20"
+    }
+
+    return string;
 }

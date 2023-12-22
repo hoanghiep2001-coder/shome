@@ -1,4 +1,6 @@
-import APIs from "../../../API";
+import APIs from "../../../data/API";
+
+
 
 function SubAboutUs() {
   return (

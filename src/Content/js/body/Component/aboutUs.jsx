@@ -1,4 +1,4 @@
-import APIs from "../../../API";
+import APIs from "../../../data/API";
 
 function AboutUs() {
     return (

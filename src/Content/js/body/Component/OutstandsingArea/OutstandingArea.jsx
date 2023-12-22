@@ -1,5 +1,6 @@
 
-import APIs from "../../../../API";
+
+import APIs from "../../../../data/API";
 import styles from "./OutstandingArea.module.scss";
 import classnames from "classnames/bind"
 const cb = classnames.bind(styles);

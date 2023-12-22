@@ -1,9 +1,9 @@
 import React from "react";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
-import APIs from "../../../Content/API";
 import { IoLocationOutline } from "react-icons/io5";
 import DropdownComponent from "../../Dropdown";
+import APIs from "../../../Content/data/API";
 
 function FilterPageComp() {
   return (

@@ -1,7 +1,7 @@
 import { BsArrowBarUp } from "react-icons/bs";
+import { useEffect } from "react";
 import classnames from "classnames/bind";
 import styles from "./scrollToTop.module.scss";
-import { useEffect } from "react";
 const cb = classnames.bind(styles)
 function ScrollToTop() {
 

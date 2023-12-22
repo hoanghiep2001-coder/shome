@@ -2,7 +2,6 @@
 import React from "react";
 import Header from "../../Content/js/header/header";
 import Footer from "../../Content/js/footer/footer";
-import APIs from "../../Content/API";
 import Image from 'react-bootstrap/Image';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
@@ -16,6 +15,7 @@ import { calculateRating } from "../function/utils";
 import classnames from "classnames/bind";
 import styles from "./details.module.scss";
 import GoogleMap from "./components/googleMap/googleMap";
+import APIs from "../../Content/data/API";
 const cb = classnames.bind(styles)
 
 function Details() {

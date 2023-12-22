@@ -1,4 +1,5 @@
-import APIs from "../../../API";
+
+import APIs from "../../../data/API";
 import logo from "../../../image/thumb/LOGO2_fix.png";
 function Hero() {
   return (

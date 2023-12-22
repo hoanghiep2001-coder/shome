@@ -1,5 +1,6 @@
-import APIs from "../../../API";
+
 import { FaRegUserCircle  } from "react-icons/fa";
+import APIs from "../../../data/API";
 function Navigation() {
   return (
     <div className="d-lg-flex align-items-lg-center">
