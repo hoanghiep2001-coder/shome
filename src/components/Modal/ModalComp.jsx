@@ -3,10 +3,9 @@ import styles from "./ModalComp.module.scss";
 import { useEffect } from "react";
 const cb = classnames.bind(styles);
 
-function ModalComp({ showModal, onClose, children }) {
+function ModalComp({ showModal = false, onClose = () => {}, children }) {
     
     useEffect(() => {
-        console.log(showModal);
         const rootAddClass = () => {
             const body = document.querySelector("#root");
             body.classList.add("modal_isShowing")

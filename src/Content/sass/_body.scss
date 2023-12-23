@@ -1,5 +1,4 @@
 
-
 .body {
   padding-top: 80px;
   position: relative;
@@ -485,6 +484,7 @@
   }
 }
 
+
 .bg-main {
   background-color: $color-background-footer !important;
 }
@@ -518,5 +518,18 @@
   }
 }
 
+
+.modal_isShowing  {
+  .body {
+    .body__filter {
+      &.is-scrollDown {
+        z-index: unset;
+      }
+    }
+  }
+  #scrollToTopButton {
+    z-index: unset;
+  }
+}
 
 

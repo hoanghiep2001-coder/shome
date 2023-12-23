@@ -615,6 +615,13 @@ a:hover {
   text-overflow: ellipsis;
 }
 
+.modal_isShowing .body .body__filter.is-scrollDown {
+  z-index: unset;
+}
+.modal_isShowing #scrollToTopButton {
+  z-index: unset;
+}
+
 .footer {
   background-color: #f6e9d5;
   color: #0c163b;
