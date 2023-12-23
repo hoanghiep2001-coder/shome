@@ -489,7 +489,34 @@
   background-color: $color-background-footer !important;
 }
 
-.filter__nav-dropdownItem {
-  background-color: #fff;
-  position: relative;
+.filter__nav-dropdownMenu {
+  min-width: 200px;
+  max-width: 250px;
+  padding: 8px 12px;
+
+  .filter__nav-dropdownItem {
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    .dropdownItem_desc  {
+      max-width: 70%;
+      text-wrap: wrap;
+      line-height:32px;
+      font-size: 16px;
+      display: block;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      // width: 70%;
+      // overflow: ;s
+    }
+  }
 }
+
+
+

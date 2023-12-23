@@ -1,3 +1,4 @@
+import Image from "../../../../../components/Image/Image";
 import { caculateItemsPadding, calculateRating } from "../../../../../pages/function/utils";
 import { FaRegBookmark } from "react-icons/fa";
 
@@ -21,11 +22,7 @@ export function RoomItem(props) {
       <div className={`col col-lg-3 ${padding}`}>
         <a href={props.link} className={"listRoom__item"} onClick={handleClick} data-id={props.data_id}>
           <div className="listRoom__item-wrapper">
-            <img
-              className="listRoom__item-img"
-              src={props.image}
-              alt={props.image}
-            />
+            <Image src={props.image} alt={props.image} className={"listRoom__item-img"}/>
           </div>
           <div className="listRoom__item-content">
             <h3 className="listRoom__content-place">{props.place}</h3>

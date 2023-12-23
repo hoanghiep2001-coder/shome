@@ -1,5 +1,3 @@
-
-
 import classnames from "classnames/bind";
 import styles from "../scss/roomList.module.scss";
 import { PaginationComp } from "./Pagination/Pagination";
@@ -17,6 +15,7 @@ function ListRoom() {
 
   // Tính toán phần dữ liệu cần hiển thị trên trang hiện tại
   const itemsPerPage = paginationData.itemToShow;
+  const MaxPage = Math.ceil(APIs.bodyAPIs.roomList.length / itemsPerPage);
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = APIs.bodyAPIs.roomList.slice(
@@ -24,19 +23,28 @@ function ListRoom() {
     indexOfLastItem
   );
 
+    const scrollToTopList = () => {
+      window.scrollTo({
+          top: 580,
+          behavior: "smooth"
+      });
+  };
+
   // Hàm xử lý khi click vào nút phân trang
   const handlePaginationClick = (e) => {
+
     e.preventDefault();
     let dataPage = e.currentTarget.getAttribute("data-page");
     Number(dataPage);
     if (dataPage) {
-      if (dataPage > 3 || dataPage < 1) {
+      if (dataPage > MaxPage || dataPage < 1) {
         return;
       }
       setCurrentPage(dataPage);
     } else {
       setCurrentPage(Number(e.target.textContent));
     }
+    scrollToTopList();
   };
 
   return (
@@ -70,8 +78,7 @@ function ListRoom() {
           <PaginationComp 
             currentPage={currentPage}
             handlePaginationClick={handlePaginationClick}
-            itemsPerPage={itemsPerPage}
-            roomLengthAPI={APIs.bodyAPIs.roomList.length}
+            MaxPage={MaxPage}
           />
       </div>
     </div>

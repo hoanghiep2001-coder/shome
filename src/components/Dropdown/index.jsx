@@ -15,9 +15,10 @@ function DropdownComponent(props) {
         {props.contents.map((content) => {
           return (
             <li key={content.fakeId} className={props.chilrenDropdownClass}>
-              <a className="dropdown-item" href="#">
+              <p className="dropdownItem_desc">
                 {content.content}
-              </a>
+              </p>
+              <input type={"checkbox"} className="dropdownItem_checkbox" />
             </li>
           );
         })}

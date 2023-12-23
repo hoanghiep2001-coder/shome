@@ -53,7 +53,6 @@ function Filter(props) {
                     : "filter__nav-button btn dropdown-toggle"
                 }
                 searchICon={
-                  // index === 4 ? <BiSearch className="Search-button-icon" /> : ""
                   index === 4 ? (
                     <img
                       src={searchIcon}
