@@ -8,12 +8,39 @@ const cb = classnames.bind(styles);
 function Account(props) {
   const [logInContainer, setLogInContainer] = useState(false);
   const [activeContainer, setActiveContainer] = useState(false);
+  const [signUpFormData, setSignUpFormData] = useState({
+    email: "",
+    fullName: "",
+    username: "",
+    password: "",
+  });
+
   const handleInfoItemClick = () => {
     setLogInContainer(!logInContainer);
   };
+
   // const handleContainerFormClick = () => {
   //   setActiveContainer(true);
   // };
+
+ const handleSignUpClick = () => {
+    // Lấy giá trị từ các trường input khi người dùng nhấn nút Sign Up
+    const email = document.querySelector('input[name="email"]').value;
+    const fullName = document.querySelector('input[name="fullName"]').value;
+    const username = document.querySelector('input[name="Username"]').value; // Lưu ý tên trường input là "Username" thay vì "Username"
+    const password = document.querySelector('input[name="Password"]').value;
+
+    // Cập nhật state với các giá trị vừa lấy được
+    setSignUpFormData({
+      email,
+      fullName,
+      username,
+      password,
+    });
+
+    // Đoạn này bạn có thể thực hiện các xử lý khác sau khi lấy dữ liệu, ví dụ: validate dữ liệu, gửi request đăng ký tài khoản, vv.
+  };
+
   return (
     <ModalComp 
         showModal={props.show} 

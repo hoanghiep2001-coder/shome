@@ -1,13 +1,9 @@
-import classnames from "classnames/bind";
-import styles from "../scss/roomList.module.scss";
 import { PaginationComp } from "./Pagination/Pagination";
 import { useState } from "react";
 import {Constant} from "../../../data/constant";
 import APIs from "../../../data/API";
 import { RoomItem } from "./RoomItem/RoomItem";
 
-
-const cb = classnames.bind(styles);
 
 function ListRoom() {
   const paginationData = Constant.Pagination;
@@ -46,7 +42,7 @@ function ListRoom() {
     }
     scrollToTopList();
   };
-
+ 
   return (
     <div className="body__listRoom">
       <div className="container">
