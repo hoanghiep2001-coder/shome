@@ -146,9 +146,9 @@
   overflow: hidden;
   position: absolute;
   left: 30px;
-  top: -30px;
+  top: -50px;
   width: 305px;
-  height: 380px;
+  height: 420px;
   background-color: #fff;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   -moz-transition: all 0.5s;
@@ -264,4 +264,7 @@
   font-size: 12px;
   font-style: italic;
   font-weight: 400;
+  display: block;
+  margin: 6px auto;
+  width: 220px;
 }

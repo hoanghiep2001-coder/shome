@@ -8,7 +8,7 @@ const cb = classnames.bind(styles);
 function Account(props) {
   const [logInContainer, setLogInContainer] = useState(false);
   const [activeContainer, setActiveContainer] = useState(false);
-  const [signUpData, setSignUpData] = useState({email: "", fullName: "", username: "", password: ""});
+  const [signUpData, setSignUpData] = useState({ email: "", fullName: "", username: "", password: "" });
 
   const handleInfoItemClick = () => {
     setLogInContainer(!logInContainer);
@@ -18,14 +18,14 @@ function Account(props) {
   //   setActiveContainer(true);
   // };
 
- const handleSignUpClick = () => {
+  const handleSignUpClick = () => {
     setSignUpData(getUserData());
   };
 
   return (
-    <ModalComp 
-        showModal={props.show} 
-        onClose={props.onHide}
+    <ModalComp
+      showModal={props.show}
+      onClose={props.onHide}
     >
       <div
         className={cb(
@@ -62,12 +62,19 @@ function Account(props) {
             <div className={cb("form-item", "log-in")}>
               <div className={cb("table")}>
                 <div className={cb("table-cell")}>
-                  <input name="Username" placeholder="Username" type="text" />
-                  <input
-                    name="Password"
-                    placeholder="Password"
-                    type="password"
-                  />
+                  <div className="mb-3">
+                    <input name="Username" placeholder="Username" type="text" />
+                    {/* <span className={cb("signUp_inputFail")}></span> */}
+                  </div>
+                  <div className="mb-3">
+
+                    <input
+                      name="Password"
+                      placeholder="Password"
+                      type="password"
+                    />
+                    {/* <span className={cb("signUp_inputFail")}></span> */}
+                  </div>
                   <div className={cb("btn")}>Log in</div>
                 </div>
               </div>
@@ -76,15 +83,15 @@ function Account(props) {
               <div className={cb("table")}>
                 <div className={cb("table-cell")}>
                   <div className="mb-3">
-                    <input name="email" placeholder="Email" type="text" id="signUp_userEmail"/>
+                    <input name="email" placeholder="Email" type="text" id="signUp_userEmail" />
                     <span className={cb("signUp_inputFail")}>{signUpData.email}</span>
                   </div>
                   <div className="mb-3">
-                    <input name="fullName" placeholder="Full Name" type="text" id="signUp_userFullName"/>
+                    <input name="fullName" placeholder="Full Name" type="text" id="signUp_userFullName" />
                     <span className={cb("signUp_inputFail")}>{signUpData.fullName}</span>
                   </div>
                   <div className="mb-3">
-                    <input name="Username" placeholder="Username" type="text" id="signUp_userName"/>
+                    <input name="Username" placeholder="Username" type="text" id="signUp_userName" />
                     <span className={cb("signUp_inputFail")}>{signUpData.username}</span>
                   </div>
                   <div className="mb-3">

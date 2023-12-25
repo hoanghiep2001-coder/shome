@@ -52,13 +52,8 @@ export const getUserData = () => {
 
     const passValidator = (string = "") => {
         let result = "";
-        if (string.length <= 8) {
-            result = "Mật khẩu không được ít hơn 8 ký tự.";
-            return result;
-        }
-
-        if (string.length >= 24) {
-            result = "Mật khẩu không được quá 24 ký tự.";
+        if (!validator.isLength(string, { min: 8, max: 24 })) {
+            result = "username phải có độ dài từ 8 - 24 ký tự.";
             return result;
         }
 
@@ -76,6 +71,22 @@ export const getUserData = () => {
         return result;
     }
 
+    const userValidate = (string = "") => {
+        let result = "";    
+        if(!validator.isAlphanumeric(string)) {
+            result = "username chỉ được chứa ký tự và số";
+            return result;
+        }
+
+        if(!validator.isLength(string, { min: 8, max: 32 })) {
+            result = "username phải có độ dài từ 8 - 32 ký tự";
+            return result;
+        }
+
+        result = string;
+        return result;
+    }
+
     const email = document.querySelector('#signUp_userEmail').value;
     const fullName = document.querySelector('#signUp_userFullName').value;
     const username = document.querySelector('#signUp_userName').value;
@@ -83,8 +94,9 @@ export const getUserData = () => {
 
     signUpFormData = {
         email: validator.isEmail(email) ? email : "Sai định dạng email!",
-        fullName: (validator.isAlpha(fullName) && validator.isLength(fullName, { min: 8, max: 32 }) ? fullName : "Đây không phải tên người!"),
-        username: validator.isAlphanumeric(username) ? username : false,
+        fullName: (validator.isAlpha(fullName) 
+            && validator.isLength(fullName, { min: 8, max: 32 }) ? fullName : "Đây không phải tên người!"),
+        username: userValidate(username),
         password: passValidator(password),
     }
 
