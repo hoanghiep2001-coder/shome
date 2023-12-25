@@ -53,7 +53,7 @@ export const getUserData = () => {
     const passValidator = (string = "") => {
         let result = "";
         if (!validator.isLength(string, { min: 8, max: 24 })) {
-            result = "username phải có độ dài từ 8 - 24 ký tự.";
+            result = "Mật khẩu phải có độ dài từ 8 - 24 ký tự.";
             return result;
         }
 
