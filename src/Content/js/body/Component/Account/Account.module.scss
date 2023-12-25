@@ -90,7 +90,7 @@
   padding: 10px 15px;
 }
 .container input {
-  margin: 0 auto 15px;
+  margin: 0 auto;
   display: block;
   width: 220px;
   -moz-transition: all 0.3s;
@@ -257,4 +257,11 @@
   right: 20px;
   z-index: 3;
   fill: #fff;
+}
+
+.signUp_inputFail {
+  color: red;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
 }

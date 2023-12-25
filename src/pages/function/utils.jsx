@@ -1,4 +1,5 @@
 import { BsFillStarFill, BsStarHalf } from "react-icons/bs";
+import validator from "validator";
 
 export const calculateRating = (rating) => {
     const numberOfFullStars = Math.floor(rating);
@@ -30,6 +31,7 @@ export const ScrollToMap = () => {
 
 }
 
+
 export const caculateItemsPadding = (id) => {
     let string = "";
     if ((id >= 5 && id <= 8) || (id >= 13 && id <= 16) || (id >= 21 && id <= 24) || (id >= 29 && id <= 32)) {
@@ -37,4 +39,54 @@ export const caculateItemsPadding = (id) => {
     }
 
     return string;
+}
+
+
+export const getUserData = () => {
+    let signUpFormData = {
+        email: "",
+        fullName: "",
+        username: "",
+        password: "",
+    }
+
+    const passValidator = (string = "") => {
+        let result = "";
+        if (string.length <= 8) {
+            result = "Mật khẩu không được ít hơn 8 ký tự.";
+            return result;
+        }
+
+        if (string.length >= 24) {
+            result = "Mật khẩu không được quá 24 ký tự.";
+            return result;
+        }
+
+        if (!/[A-Z]/.test(string)) {
+            result = "Mật khẩu phải chứa ít nhất 1 ký tự viết hoa.";
+            return result;
+        }
+
+        if (/[^\w\s]/.test(string)) {
+            result = "Mật khẩu không được chứa ký tự đặc biệt.";
+            return result;
+        }
+
+        result = string;
+        return result;
+    }
+
+    const email = document.querySelector('#signUp_userEmail').value;
+    const fullName = document.querySelector('#signUp_userFullName').value;
+    const username = document.querySelector('#signUp_userName').value;
+    const password = document.querySelector('#signUp_userPassword').value;
+
+    signUpFormData = {
+        email: validator.isEmail(email) ? email : "Sai định dạng email!",
+        fullName: (validator.isAlpha(fullName) && validator.isLength(fullName, { min: 8, max: 32 }) ? fullName : "Đây không phải tên người!"),
+        username: validator.isAlphanumeric(username) ? username : false,
+        password: passValidator(password),
+    }
+
+    return signUpFormData;
 }

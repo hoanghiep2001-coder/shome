@@ -4,7 +4,7 @@ function AboutUs() {
     return (
         <div className="body__aboutUs container">
             <h2 className="aboutUs__title">
-                CÓ GÌ Ở BẢN ĐÔN?
+                CÓ GÌ Ở SHome?
             </h2>
             <div className="row">
             {

@@ -1,7 +1,5 @@
 import APIs from "../../../data/API";
 
-
-
 function FooterAboutUs() {
   return (
     <div className="footer__aboutUs">
