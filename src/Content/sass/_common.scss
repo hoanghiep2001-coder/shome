@@ -82,3 +82,12 @@ a:hover {
 .half-orange {
   color: linear-gradient(to right, orange 50%, transparent 50%);
 }
+
+input {
+  &.warning {
+    border: 1px solid #ff6f4a !important;
+  }
+  &.success {
+    border: 1px solid #81ffc0 !important;
+  }
+}

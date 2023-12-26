@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import classnames from "classnames/bind";
 import styles from "./Account.module.scss";
 import ModalComp from "../../../../../components/Modal/ModalComp";
@@ -14,9 +14,13 @@ function Account(props) {
     setLogInContainer(!logInContainer);
   };
 
-  // const handleContainerFormClick = () => {
-  //   setActiveContainer(true);
-  // };
+
+  useEffect(() => {
+    if (typeof signUpData === 'boolean') {
+      console.log("Check");
+      setActiveContainer(true);
+    }
+  }, [signUpData]);
 
   const handleSignUpClick = () => {
     setSignUpData(getUserData());

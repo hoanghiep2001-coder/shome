@@ -7,7 +7,11 @@ import Details from "./pages/Details/details";
 import { Helmet } from 'react-helmet';
 import logo from "../src/Content/image/thumb/LOGO2_fix.png";
 import ScrollToTop from "./pages/function/scrollToTop";
+  
+
 function App() {
+
+
   return (
     <>
       <Helmet>

@@ -84,6 +84,13 @@ a:hover {
   color: linear-gradient(to right, orange 50%, transparent 50%);
 }
 
+input.warning {
+  border: 1px solid #ff6f4a !important;
+}
+input.success {
+  border: 1px solid #81ffc0 !important;
+}
+
 .header {
   background-color: #fff;
   padding: 10px 0;
