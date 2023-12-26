@@ -80,16 +80,17 @@ const userValidate = (string = "", element = <input />) => {
         return result;
     }
 
-    // let storage = JSON.parse(localStorage.getItem("SHome_userAccounts"));
-    // let username = storage.find((account) => {
-    //     return account.username === string;
-    // });
-    // if(username) {
-    //     element.classList.remove("success");
-    //     element.classList.add("warning");
-    //     result = "username đã được sử dụng!";
-    //     return result;
-    // }
+    let storage = JSON.parse(localStorage.getItem("SHome_Data"));
+    let userAccounts = storage.userAccounts;
+    let username = userAccounts.find((account) => {
+        return account.username === string;
+    });
+    if(username) {
+        element.classList.remove("success");
+        element.classList.add("warning");
+        result = "username đã được sử dụng!";
+        return result;
+    }
 
     element.classList.add("success");
     userSignUpData['username'] = string;
@@ -125,16 +126,17 @@ const emailValidate = (string = "", element = <input />) => {
         return result;
     }
 
-    // let storage = JSON.parse(localStorage.getItem("SHome_userAccounts"));
-    // let email = storage.find((account, index) => {
-    //     return account.email === string;
-    // });
-    // if(email) {
-    //     element.classList.remove("success");
-    //     element.classList.add("warning");
-    //     result = "Email đã được sử dụng!";
-    //     return result;
-    // }
+    let storage = JSON.parse(localStorage.getItem("SHome_Data"));
+    let userAccounts = storage.userAccounts;
+    let email = userAccounts.find((account, index) => {
+        return account.email === string;
+    });
+    if(email) {
+        element.classList.remove("success");
+        element.classList.add("warning");
+        result = "Email đã được sử dụng!";
+        return result;
+    }
 
     element.classList.add("success");
     userSignUpData['email'] = string;
@@ -164,9 +166,11 @@ export const getUserData = () => {
     if (Object.keys(userSignUpData).length === 4) {
         let SHomeData = JSON.parse(localStorage.getItem("SHome_Data"));
         let userAccounts = SHomeData.userAccounts;
-        console.log(userAccounts);
-        // userAccounts.push(userSignUpData);
-        // localStorage.setItem("SHomeData", JSON.stringify(userAccounts));
+        userAccounts.push(userSignUpData);
+        let newData = {
+            userAccounts,
+        }
+        localStorage.setItem("SHome_Data", JSON.stringify(newData));
         return true;
     }
     return validateSignUpFormData;

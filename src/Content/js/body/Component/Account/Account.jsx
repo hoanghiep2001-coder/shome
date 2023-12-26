@@ -15,10 +15,19 @@ function Account(props) {
   };
 
 
+  const handleToggleActiveContainer = () => {
+    console.log("check");
+    setActiveContainer(false);
+  };
+
+
   useEffect(() => {
     if (typeof signUpData === 'boolean') {
-      console.log("Check");
       setActiveContainer(true);
+
+      setTimeout(() => {
+        setActiveContainer(false);
+      }, 1500);
     }
   }, [signUpData]);
 
