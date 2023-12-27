@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import classnames from "classnames/bind";
 import styles from "./Account.module.scss";
 import ModalComp from "../../../../../components/Modal/ModalComp";
-import { getUserData } from "../../../../../pages/function/utils";
+import { userDataValidator } from "../../../../../pages/function/utils";
 const cb = classnames.bind(styles);
 
 function Account(props) {
@@ -14,13 +14,6 @@ function Account(props) {
     setLogInContainer(!logInContainer);
   };
 
-
-  const handleToggleActiveContainer = () => {
-    console.log("check");
-    setActiveContainer(false);
-  };
-
-
   useEffect(() => {
     if (typeof signUpData === 'boolean') {
       setActiveContainer(true);
@@ -31,8 +24,8 @@ function Account(props) {
     }
   }, [signUpData]);
 
-  const handleSignUpClick = () => {
-    setSignUpData(getUserData());
+  const handleSignUpClick = async () => {
+    setSignUpData(userDataValidator());
   };
 
   return (

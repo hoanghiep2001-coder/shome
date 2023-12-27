@@ -1,5 +1,6 @@
 import { BsFillStarFill, BsStarHalf } from "react-icons/bs";
 import validator from "validator";
+import { createUserAccounts, getUserAccount } from "./crud";
 
 export const calculateRating = (rating) => {
     const numberOfFullStars = Math.floor(rating);
@@ -64,31 +65,28 @@ const passValidator = (string = "", element = <input />) => {
     userSignUpData['password'] = string;
     return result;
 }
-const userValidate = (string = "", element = <input />) => {
-    let result = "";    
-    if(!validator.isAlphanumeric(string)) {
+const userValidate = async (string = "", element = <input />) => {
+    let result = "";
+    if (!validator.isAlphanumeric(string)) {
         element.classList.remove("success");
         element.classList.add("warning");
         result = "username chỉ được chứa ký tự và số";
         return result;
     }
 
-    if(!validator.isLength(string, { min: 8, max: 32 })) {
+    if (!validator.isLength(string, { min: 8, max: 32 })) {
         element.classList.remove("success");
         element.classList.add("warning");
         result = "username phải có độ dài từ 8 - 32 ký tự";
         return result;
     }
 
-    let storage = JSON.parse(localStorage.getItem("SHome_Data"));
-    let userAccounts = storage.userAccounts;
-    let username = userAccounts.find((account) => {
-        return account.username === string;
-    });
-    if(username) {
+    let isUsernameExist = await getUserAccount(string);
+    if (isUsernameExist) {
+        console.log(1);
         element.classList.remove("success");
         element.classList.add("warning");
-        result = "username đã được sử dụng!";
+        result = "Username đã được sử dụng!";
         return result;
     }
 
@@ -97,7 +95,7 @@ const userValidate = (string = "", element = <input />) => {
     return result;
 }
 const fullNameValidate = (string = "", element = <input />) => {
-    let result = "";    
+    let result = "";
     if (!validator.matches(string, /^[a-zA-Z\s]+$/)) {
         element.classList.remove("success");
         element.classList.add("warning");
@@ -105,7 +103,7 @@ const fullNameValidate = (string = "", element = <input />) => {
         return result;
     }
 
-    if(!validator.isLength(string, { min: 8, max: 32 })) {
+    if (!validator.isLength(string, { min: 8, max: 32 })) {
         element.classList.remove("success");
         element.classList.add("warning");
         result = "Đây không phải tên người!";
@@ -116,22 +114,18 @@ const fullNameValidate = (string = "", element = <input />) => {
     userSignUpData['fullName'] = string;
     return result;
 }
-const emailValidate = (string = "", element = <input />) => {
-    let result = "";  
-
-    if(!validator.isEmail(string)) {
+const emailValidate = async (string = "", element = <input />) => {
+    let result = "";
+    if (!validator.isEmail(string)) {
         element.classList.remove("success");
         element.classList.add("warning");
         result = "Sai định dạng email!";
         return result;
     }
 
-    let storage = JSON.parse(localStorage.getItem("SHome_Data"));
-    let userAccounts = storage.userAccounts;
-    let email = userAccounts.find((account, index) => {
-        return account.email === string;
-    });
-    if(email) {
+    let isEmailExist = await getUserAccount(string);
+    if (isEmailExist) {
+        console.log(2);
         element.classList.remove("success");
         element.classList.add("warning");
         result = "Email đã được sử dụng!";
@@ -144,7 +138,7 @@ const emailValidate = (string = "", element = <input />) => {
 }
 
 
-export const getUserData = () => {
+export const userDataValidator = async () => {
     let validateSignUpFormData = {
         email: "",
         fullName: "",
@@ -157,20 +151,14 @@ export const getUserData = () => {
     const password = document.querySelector('#signUp_userPassword');
 
     validateSignUpFormData = {
-        email: emailValidate(email.value, email),
+        email: await emailValidate(email.value, email),
         fullName: fullNameValidate(fullName.value, fullName),
-        username: userValidate(username.value, username),
+        username: await userValidate(username.value, username),
         password: passValidator(password.value, password),
     }
-    
+
     if (Object.keys(userSignUpData).length === 4) {
-        let SHomeData = JSON.parse(localStorage.getItem("SHome_Data"));
-        let userAccounts = SHomeData.userAccounts;
-        userAccounts.push(userSignUpData);
-        let newData = {
-            userAccounts,
-        }
-        localStorage.setItem("SHome_Data", JSON.stringify(newData));
+        createUserAccounts(userSignUpData);
         return true;
     }
     return validateSignUpFormData;

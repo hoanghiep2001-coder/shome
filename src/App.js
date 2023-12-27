@@ -3,14 +3,13 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import FilterPage from "./pages/Filter";
 import Home from "./pages/Home";
 import Details from "./pages/Details/details";
+import axios from "axios";
 
 import { Helmet } from 'react-helmet';
 import logo from "../src/Content/image/thumb/LOGO2_fix.png";
 import ScrollToTop from "./pages/function/scrollToTop";
-  
 
 function App() {
-
 
   return (
     <>
@@ -18,6 +17,7 @@ function App() {
         <title>Shome</title>
         <link rel="icon" href={logo} />
       </Helmet>
+
       <Router>
         <div className="App">
           <Routes>
