@@ -2,7 +2,7 @@ import axios from "axios";
 
 
 export const getAllUserData = () => {
-    axios.get('http://localhost:3001/getUserAccounts')
+    axios.get('https://shome-back-end.vercel.app/getUserAccounts')
     .then((userAccounts) => {
         return userAccounts.data;
     }).catch(err => console.log(err));
@@ -11,7 +11,7 @@ export const getAllUserData = () => {
 
 export const getUserAccount = async (data) => {
     try {
-      const userAccounts = await axios.get('http://localhost:3001/getUserAccounts');
+      const userAccounts = await axios.get('https://shome-back-end.vercel.app/getUserAccounts');
       
       const email = userAccounts.data.find((account) => account.email === data);
       const fullName = userAccounts.data.find((account) => account.fullName === data);
@@ -36,7 +36,7 @@ export const getUserAccount = async (data) => {
 
 
 export const createUserAccounts = (data) => {
-    axios.post('http://localhost:3001/createUserAccount', data)
+    axios.post('https://shome-back-end.vercel.app/createUserAccount', data)
     .then((userAccounts) => {
         console.log(userAccounts);
     }).catch(err => console.log(err));
