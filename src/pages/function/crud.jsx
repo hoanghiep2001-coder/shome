@@ -1,6 +1,5 @@
 import axios from "axios";
 
-
 export const getAllUserData = () => {
     axios.get('https://shome-back-end.vercel.app/getUserAccounts')
     .then((userAccounts) => {
