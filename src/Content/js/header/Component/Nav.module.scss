@@ -16,5 +16,7 @@
 
 /* Phone */
 @media (max-width: 576px) {
- 
+    .mobile_container {
+        justify-content: space-between;
+    }
 }

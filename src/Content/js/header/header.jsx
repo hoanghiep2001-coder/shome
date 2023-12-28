@@ -24,7 +24,7 @@ function Header() {
 
   return (
     <div id="header" className={"header"}>
-      <div className={cb("header__container", "container", "d-flex", "align-items-lg-center", "justify-content-lg-between")}>
+      <div className={cb("header__container", "container", "d-flex", "align-items-center", "justify-content-between")}>
         <a href="/" className={cb("header__homePage")}>
           <img src={Logo} alt="Logo" className={cb("icon-LOGO_demo")} />
         </a>
