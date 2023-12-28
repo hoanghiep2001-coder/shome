@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const getAllUserData = () => {
-    axios.get('https://shome-back-end.vercel.app/getUserAccounts')
+    axios.get('http://localhost:3001/getUserAccounts')
     .then((userAccounts) => {
         return userAccounts.data;
     }).catch(err => console.log(err));
@@ -34,8 +34,8 @@ export const getUserAccount = async (data) => {
   };
 
 
-export const createUserAccounts = (data) => {
-    axios.post('https://shome-back-end.vercel.app/createUserAccount', data)
+export const createUserAccount = (data) => {
+    axios.post('http://localhost:3001/createUserAccount', data)
     .then((userAccounts) => {
         console.log(userAccounts);
     }).catch(err => console.log(err));

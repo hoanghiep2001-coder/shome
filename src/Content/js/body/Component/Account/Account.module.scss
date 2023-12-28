@@ -82,6 +82,9 @@
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  outline: none;
+  border: none;
+  border-radius: 8px;
 }
 .container .btn:hover {
   opacity: 0.7;

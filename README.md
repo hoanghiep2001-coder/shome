@@ -1,16 +1,5 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Sửu dụng terminal chạy dòng lệnh npm start
-Mở [http://localhost:3000](http://localhost:3000) để xem trang web trên browser.
-
+### `Debug: Update 28/12/2023:`
+- Trang web hiện chỉ đang chạy Frontend, không chạy server xử lý phần Backend
 
 ### `localStorage`
 Trang web sử dụng localStorage để lưu trữ data tạm thời
