@@ -8,12 +8,15 @@ import "./Content/css/main.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+import ShomeProvider from "./provider/ShomeContext.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  // <React.StrictMode>
-    <App />
-  /* </React.StrictMode> */
+  <React.StrictMode>
+    <ShomeProvider>
+      <App />
+    </ShomeProvider>
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

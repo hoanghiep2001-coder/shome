@@ -1,7 +1,9 @@
 import { React, useEffect } from "react";
-
 import Navigation from "./Component/nav";
 import Logo from "../../image/thumb/LOGO2_fix.png";
+import classnames from "classnames/bind";
+import styles from "./Header.module.scss";
+const cb = classnames.bind(styles);
 function Header() {
   useEffect(() => {
     const header = document.querySelector("#header");
@@ -22,11 +24,10 @@ function Header() {
 
   return (
     <div id="header" className={"header"}>
-      <div className="header__container container d-lg-flex align-items-lg-center justify-content-lg-between">
-        <a href="/" className="header__homePage">
-          <img src={Logo} alt="Logo" className="icon-LOGO_demo" />
+      <div className={cb("header__container", "container", "d-flex", "align-items-lg-center", "justify-content-lg-between")}>
+        <a href="/" className={cb("header__homePage")}>
+          <img src={Logo} alt="Logo" className={cb("icon-LOGO_demo")} />
         </a>
-
         <Navigation />
       </div>
     </div>
