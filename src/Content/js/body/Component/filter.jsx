@@ -1,4 +1,3 @@
-
 import { IoLocationOutline } from "react-icons/io5";
 import { FaAngleDown } from "react-icons/fa";
 import searchIcon from "../../../image/icon/search-icon.svg";
