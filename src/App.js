@@ -6,7 +6,8 @@ import Details from "./pages/Details/details";
 
 import { Helmet } from 'react-helmet';
 import logo from "../src/Content/image/thumb/LOGO2_fix.png";
-import ScrollToTop from "./pages/function/scrollToTop";
+import ScrollToTop from "./components/ScrollToTop/scrollToTop";
+
 
 function App() {
 
@@ -27,7 +28,7 @@ function App() {
         </div>
       </Router>
 
-      <ScrollToTop/>
+      <ScrollToTop />
     </>
   );
 }

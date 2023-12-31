@@ -1,0 +1,28 @@
+
+/* PC */
+@media (min-width: 1114px) {
+
+}
+
+/* PC low resolution */
+@media (min-width: 1024px) and (max-width: 1113px) {
+
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+  
+}
+
+
+/* Phone */
+@media (max-width: 576px) {
+    .config-isPhone-title {
+        margin-bottom: 60px !important;
+    }
+
+    .config-isPhone-text {
+        margin-top: 12px;
+        text-indent: 30px !important;
+    }
+}

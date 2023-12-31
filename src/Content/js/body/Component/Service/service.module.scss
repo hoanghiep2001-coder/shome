@@ -1,0 +1,28 @@
+/* PC */
+@media (min-width: 1114px) {
+
+}
+
+/* PC low resolution */
+@media (min-width: 1024px) and (max-width: 1113px) {
+
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+
+
+/* Phone */
+@media (max-width: 576px) {
+    .config-service-row {
+        padding: 0 !important;
+        flex-direction: column;
+        margin: 0 !important;
+    }
+
+    .config-service-col {
+        padding: 0;
+    }
+}

@@ -271,3 +271,39 @@
   margin: 6px auto;
   width: 220px;
 }
+
+
+/* PC */
+@media (min-width: 1114px) {
+
+}
+
+/* PC low resolution */
+@media (min-width: 1024px) and (max-width: 1113px) {
+
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+
+
+/* Phone */
+@media (max-width: 576px) {
+  // .container {
+  //   position: relative;
+  //   width: 360px;
+  //   margin: 30px auto 0;
+  //   height: 320px;
+  //   background-color: #999ede;
+  //   top: 50%;
+  //   margin-top: -160px;
+  //   -moz-transition: all 0.5s;
+  //   -o-transition: all 0.5s;
+  //   -webkit-transition: all 0.5s;
+  //   transition: all 0.5s;
+  //   font-family: "Roboto", sans-serif;
+  //   border-radius: 12px;
+  // }
+}

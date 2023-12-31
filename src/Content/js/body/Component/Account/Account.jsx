@@ -1,12 +1,14 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import classnames from "classnames/bind";
 import styles from "./Account.module.scss";
 import ModalComp from "../../../../../components/Modal/ModalComp";
 import { userDataValidator } from "../../../../../pages/function/utils";
 import axios from "axios";
+import { Shome_Context } from "../../../../../provider/ShomeContext";
 const cb = classnames.bind(styles);
 
 function Account(props) {
+  const context = useContext(Shome_Context);
   const [logInContainer, setLogInContainer] = useState(false);
   const [activeContainer, setActiveContainer] = useState(false);
   const [email, setEmail] = useState();
@@ -46,12 +48,14 @@ function Account(props) {
     <ModalComp
       showModal={props.show}
       onClose={props.onHide}
+      
     >
       <div
         className={cb(
           "container",
-          `${logInContainer ? "log-in" : ""}`,
-          `${activeContainer ? "active" : ""}`
+          context.webResponsiveStyle === "is-phone" && "is-phone",
+          `${logInContainer && "log-in"}`,
+          `${activeContainer && "active"}`
         )}
       >
         <div className={cb("box")}></div>
@@ -60,9 +64,9 @@ function Account(props) {
             <div className={cb("info-item")}>
               <div className={cb("table")}>
                 <div className={cb("table-cell")}>
-                  <p>Have an account?</p>
+                  <p>Bạn đã có tài khoản?</p>
                   <div className={cb("btn")} onClick={handleInfoItemClick}>
-                    Log in
+                    Đăng nhập
                   </div>
                 </div>
               </div>
@@ -70,9 +74,9 @@ function Account(props) {
             <div className={cb("info-item")}>
               <div className={cb("table")}>
                 <div className={cb("table-cell")}>
-                  <p>Don't have an account?</p>
+                  <p>Chưa có tài khoản ư?</p>
                   <div className={cb("btn")} onClick={handleInfoItemClick}>
-                    Sign up
+                    Đăng ký
                   </div>
                 </div>
               </div>
@@ -95,7 +99,7 @@ function Account(props) {
                     />
                     {/* <span className={cb("signUp_inputFail")}></span> */}
                   </div>
-                  <div className={cb("btn")}>Log in</div>
+                  <div className={cb("btn")}>Đăng nhập</div>
                 </div>
               </div>
             </div>
@@ -130,7 +134,7 @@ function Account(props) {
                     />
                     <span className={cb("signUp_inputFail")}>{signUpData.password}</span>
                   </div>
-                  <button type="submit" className={cb("btn", "d-block")} onClick={handleSignUpClick}>Sign up</button>
+                  <button type="submit" className={cb("btn", "d-block")} onClick={handleSignUpClick}>Đăng ký</button>
                 </div>
               </div>
             </div>

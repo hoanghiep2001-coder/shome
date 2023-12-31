@@ -6,6 +6,7 @@ function ShomeProvider({ children }) {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [webResponsiveStyle, setWebResponsiveStyle] = useState("");
 
+
   const handleResize = () => {
     setWindowWidth(window.innerWidth);
   };
@@ -27,7 +28,7 @@ function ShomeProvider({ children }) {
   }, [windowWidth]);
 
   const value = {
-    webResponsiveStyle
+    webResponsiveStyle,
   };
 
   return <Shome_Context.Provider value={value}>{children}</Shome_Context.Provider>;

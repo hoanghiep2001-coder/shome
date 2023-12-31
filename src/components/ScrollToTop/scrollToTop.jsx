@@ -1,10 +1,12 @@
 import { BsArrowBarUp } from "react-icons/bs";
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import classnames from "classnames/bind";
 import styles from "./scrollToTop.module.scss";
+import { Shome_Context } from "../../provider/ShomeContext";
+
 const cb = classnames.bind(styles)
 function ScrollToTop() {
-
+    const context = useContext(Shome_Context);
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,

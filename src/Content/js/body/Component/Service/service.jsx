@@ -1,11 +1,16 @@
-import Button from "../../../../components/Button";
+import Button from "../../../../../components/Button";
 import { FaFacebookSquare, FaYoutube } from "react-icons/fa";
+import classnames from "classnames/bind";
+import styles from "./service.module.scss";
+const cb = classnames.bind(styles);
+
+
 function Service() {
   return (
     <div className="body__service">
       <div className="container body__service-wrapper">
-        <div className="row body__service-row">
-          <div className="col col-lg-6">
+        <div className={cb("row", "body__service-row", "config-service-row")}>
+          <div className={cb("col", "col-lg-6", "config-service-col")}>
             <h2 className="service__title">HỖ TRỢ KHÁCH HÀNG</h2>
             <div className="service__warpper">
               <h3>E-Mail</h3>
@@ -16,7 +21,7 @@ function Service() {
               <p>0396448870</p>
             </div>
           </div>
-          <div className="col col-lg-6">
+          <div className={cb("col", "col-lg-6", "config-service-col")}>
             <div className="mb-3">
               <input
                 type="text"

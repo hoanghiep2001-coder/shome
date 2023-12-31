@@ -1,11 +1,12 @@
 import Hero from "./Component/hero";
 import Filter from "./Component/filter";
 import ListRoom from "./Component/roomList";
-import SubAboutUs from "./Component/subAboutUs";
-import Convenient from "./Component/convenient";
-import Service from "./Component/service";
+import SubAboutUs from "./Component/subAboutUs/subAboutUs";
+
+import Service from "./Component/Service/service";
 import FilterPageComp from "../../../components/Layout/FilterComponent";
 import OutstandingArea from "./Component/OutstandsingArea/OutstandingArea";
+import Convenient from "./Component/Convenient/convenient";
 
 function Body(props) {
   return (

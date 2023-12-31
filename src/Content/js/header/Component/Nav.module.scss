@@ -19,4 +19,28 @@
     .mobile_container {
         justify-content: space-between;
     }
+
+    .canvas-config {
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #fff;
+    }
+
+
+    .canvasHeader-config {
+        background-color: black;
+    }
+
+
+    .listGroup-config {
+        // background-color: rgba(0, 0, 0, 0.8);;
+        background: none;
+        border: none;
+    }
+
+    .header__nav-item {
+        background-color: unset;
+        color: #fff;
+        border: none;
+        margin: 12px 0;
+    }
 }
