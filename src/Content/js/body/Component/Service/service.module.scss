@@ -16,13 +16,20 @@
 
 /* Phone */
 @media (max-width: 576px) {
-    .config-service-row {
-        padding: 0 !important;
+    .config-wrapper {
+        padding: 140px 20px !important;
+    }
+
+    .config-row {
+        padding: 20px !important;
         flex-direction: column;
         margin: 0 !important;
     }
 
-    .config-service-col {
+    .config-col {
         padding: 0;
+        &:first-child {
+            margin-bottom: 20px;
+        }
     }
 }
