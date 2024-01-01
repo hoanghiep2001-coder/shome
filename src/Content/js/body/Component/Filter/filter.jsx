@@ -1,12 +1,18 @@
 import { IoLocationOutline } from "react-icons/io5";
 import { FaAngleDown } from "react-icons/fa";
-import searchIcon from "../../../image/icon/search-icon.svg";
-import Button from "../../../../components/Button";
-import DropdownComponent from "../../../../components/Dropdown";
-import { React, useEffect } from "react";
-import APIs from "../../../data/API";
+import searchIcon from "../../../../image/icon/search-icon.svg";
+import Button from "../../../../../components/Button";
+import DropdownComponent from "../../../../../components/Dropdown";
+import { React, useContext, useEffect } from "react";
+import APIs from "../../../../data/API";
+import classnames from "classnames/bind";
+import styles from "./filter.module.scss";
+import { Shome_Context } from "../../../../../provider/ShomeContext";
+const cb = classnames.bind(styles);
 
 function Filter(props) {
+  const context = useContext(Shome_Context);
+
   useEffect(() => {
     const filterComp = document.querySelector("#filterComponent");
     const handleStickyFilterComp = () => {
@@ -24,7 +30,9 @@ function Filter(props) {
     };
   }, []);
   return (
-    <div id="filterComponent" className="container body__filter d-lg-flex justify-content-center no-scroll">
+    <div id="filterComponent" className={cb("container", "body__filter", "d-lg-flex", "justify-content-center", "no-scroll", 
+        context.webResponsiveStyle === "is-phone" && "mobile-filter"
+    )}>
       <form
         action=""
         method="POST"

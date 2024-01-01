@@ -55,10 +55,11 @@ function ListRoom() {
           </div>
         </div>
         <div className="row" style={{ marginTop: "88px" }}>
-          {currentItems.map((item) => {
+          {currentItems.map((item, index) => {
             return (
               <RoomItem
                 key={item.id}
+                index={index}
                 title={item.title}
                 rating={item.rating}
                 price={item.price}

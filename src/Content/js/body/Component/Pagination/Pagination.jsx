@@ -11,7 +11,7 @@ export function PaginationComp({
 }) {
   return (
     <>
-      <Pagination className={cb("pagination_Container", "m-4", "me-0")}>
+      <Pagination className={cb("pagination_Container", "m-4", "mt-5")}>
         <Pagination.First
           disabled={Number(currentPage) === 1}
           data-page={1}

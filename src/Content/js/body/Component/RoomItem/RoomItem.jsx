@@ -1,11 +1,14 @@
+import { useContext } from "react";
 import Image from "../../../../../components/Image/Image";
 import { caculateItemsPadding, calculateRating } from "../../../../../pages/function/utils";
 import { FaRegBookmark } from "react-icons/fa";
+import { Shome_Context } from "../../../../../provider/ShomeContext";
 
 
 export function RoomItem(props) {
+  const context = useContext(Shome_Context);
     const rating = calculateRating(props.rating);
-    const padding = caculateItemsPadding(props.data_id)
+    const padding = caculateItemsPadding(props.data_id);
   
     const handleClick = (e) => {
       e.preventDefault();
@@ -19,7 +22,7 @@ export function RoomItem(props) {
   
     return (
   
-      <div className={`col col-lg-3 ${padding}`}>
+      <div className={`col col-lg-3 col-6 ${context.webResponsiveStyle === "is-phone" && props.index >= 2 && "isPadTop-20"} ${context.webResponsiveStyle !== "is-phone" && padding}`}>
         <a href={props.link} className={"listRoom__item"} onClick={handleClick} data-id={props.data_id}>
           <div className="listRoom__item-wrapper">
             <Image src={props.image} alt={props.image} className={"listRoom__item-img"}/>
