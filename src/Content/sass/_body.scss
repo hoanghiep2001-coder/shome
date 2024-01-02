@@ -41,7 +41,7 @@
     background-color: rgba(255, 255, 255, 0.65);
     border-radius: 28px;
     &.is-scrollDown {
-      position: sticky;
+      position: fixed;
       top: 88px;
       height: auto;
       z-index: 1000;
@@ -452,7 +452,6 @@
           }
         }
         .filter__search-wrapper {
-          // width: 100%;
           border: 1px solid $color-title-black;
           background-color: $color-white;
           border-radius: 8px;
@@ -512,8 +511,6 @@
       -webkit-box-orient: vertical;;
       overflow: hidden;
       text-overflow: ellipsis;
-      // width: 70%;
-      // overflow: ;s
     }
   }
 }
@@ -530,6 +527,36 @@
   #scrollToTopButton {
     z-index: unset;
   }
+}
+
+
+
+/* PC */
+@media (min-width: 1114px) {}
+
+/* PC low resolution */
+@media (min-width: 1024px) and (max-width: 1113px) {}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {}
+
+
+/* Phone */
+@media (max-width: 576px) {
+    .mobile-filter {
+      &.body__filter {
+          top: 650px;
+        }
+        // &.is-scrollDown {
+        //     position: sticky;
+        //     top: 88px;
+        //     height: auto;
+        //     z-index: 1000;
+        //     left: 0;
+        //     transform: unset;
+        //     background-color: rgba(255, 255, 255, 0.85);
+        // }
+    }
 }
 
 

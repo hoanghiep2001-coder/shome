@@ -7,21 +7,21 @@
   right: 0;
   left: 0;
   z-index: 1000;
-  animation-name: sticky; /* Tên animation bạn đã định nghĩa */
-  animation-duration: 0.5s; /* Thời gian hoàn thành animation (ví dụ: 2 giây) */
-  animation-timing-function: ease; /* Hàm đồng bộ hoặc không đồng bộ (ví dụ: ease, linear, ease-in-out) */
-  animation-delay: 0s; /* Thời gian trì hoãn trước khi bắt đầu animation (ví dụ: 0 giây) */
-  animation-iteration-count: 1; /* Số lần lặp animation (ví dụ: infinite hoặc số lần) */
-  animation-direction: normal; /* Hướng lặp lại của animation (normal, reverse, alternate) */
+  animation-name: sticky; 
+  animation-duration: 0.5s; 
+  animation-timing-function: ease; 
+  animation-delay: 0s; 
+  animation-iteration-count: 1; 
+  animation-direction: normal; 
   animation-fill-mode: forwards; 
   box-shadow: 0 0 5px 0px rgb(0 0 0 / 20%);
   &.is-sticky {
-    animation-name: noSticky; /* Tên animation bạn đã định nghĩa */
-    animation-duration: 0.5s; /* Thời gian hoàn thành animation (ví dụ: 2 giây) */
-    animation-timing-function: ease; /* Hàm đồng bộ hoặc không đồng bộ (ví dụ: ease, linear, ease-in-out) */
-    animation-delay: 0s; /* Thời gian trì hoãn trước khi bắt đầu animation (ví dụ: 0 giây) */
+    animation-name: noSticky;
+    animation-duration: 0.5s; 
+    animation-timing-function: ease; 
+    animation-delay: 0s; 
     animation-iteration-count: 1; 
-    animation-direction: normal; /* Hướng lặp lại của animation (normal, reverse, alternate) */
+    animation-direction: normal; 
     animation-fill-mode: forwards; 
     .header__container {
       padding: 10px 12px;
@@ -34,10 +34,8 @@
     }
   }
   .header__container {
-    // padding: 10px 12px;
     .header__homePage {
       .icon-LOGO_demo {
-        // font-size: 80px;
         width: $logo-default-width;
         color: $color-button;
         transition: 0.3s all ease-in-out;
@@ -61,7 +59,6 @@
     .header__nav-link {
       color: $color-title-black;
       font-family: "BeVietnamPro-SemiBold";
-      // font-family: 'Segoe UI';
       font-size: 14px;
       transition: all 0.3s ease-in-out;
       cursor: pointer;

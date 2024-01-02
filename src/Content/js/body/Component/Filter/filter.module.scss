@@ -1,23 +1,28 @@
 
-/* PC */
-@media (min-width: 1114px) {
 
-}
+// /* PC */
+// @media (min-width: 1114px) {}
 
-/* PC low resolution */
-@media (min-width: 1024px) and (max-width: 1113px) {
+// /* PC low resolution */
+// @media (min-width: 1024px) and (max-width: 1113px) {}
 
-}
-
-/* Tablet */
-@media (min-width: 740px) and (max-width: 1023px) {
-  
-}
+// /* Tablet */
+// @media (min-width: 740px) and (max-width: 1023px) {}
 
 
-/* Phone */
-@media (max-width: 576px) {
-    .mobile-filter  {
-        top: 650px !important;
-    }
-}
+// /* Phone */
+// @media (max-width: 576px) {
+//     .mobile-filter {
+//         top: 650px !important;
+
+//         &.is-scrollDown {
+//             position: sticky;
+//             top: 88px !important;
+//             height: auto;
+//             z-index: 1000;
+//             left: 0;
+//             transform: unset;
+//             background-color: rgba(255, 255, 255, 0.85);
+//         }
+//     }
+// }

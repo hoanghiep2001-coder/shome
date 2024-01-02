@@ -99,22 +99,22 @@ input.success {
   right: 0;
   left: 0;
   z-index: 1000;
-  animation-name: sticky; /* Tên animation bạn đã định nghĩa */
-  animation-duration: 0.5s; /* Thời gian hoàn thành animation (ví dụ: 2 giây) */
-  animation-timing-function: ease; /* Hàm đồng bộ hoặc không đồng bộ (ví dụ: ease, linear, ease-in-out) */
-  animation-delay: 0s; /* Thời gian trì hoãn trước khi bắt đầu animation (ví dụ: 0 giây) */
-  animation-iteration-count: 1; /* Số lần lặp animation (ví dụ: infinite hoặc số lần) */
-  animation-direction: normal; /* Hướng lặp lại của animation (normal, reverse, alternate) */
+  animation-name: sticky;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
   animation-fill-mode: forwards;
   box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.2);
 }
 .header.is-sticky {
-  animation-name: noSticky; /* Tên animation bạn đã định nghĩa */
-  animation-duration: 0.5s; /* Thời gian hoàn thành animation (ví dụ: 2 giây) */
-  animation-timing-function: ease; /* Hàm đồng bộ hoặc không đồng bộ (ví dụ: ease, linear, ease-in-out) */
-  animation-delay: 0s; /* Thời gian trì hoãn trước khi bắt đầu animation (ví dụ: 0 giây) */
+  animation-name: noSticky;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
   animation-iteration-count: 1;
-  animation-direction: normal; /* Hướng lặp lại của animation (normal, reverse, alternate) */
+  animation-direction: normal;
   animation-fill-mode: forwards;
 }
 .header.is-sticky .header__container {
@@ -213,7 +213,7 @@ input.success {
   border-radius: 28px;
 }
 .body .body__filter.is-scrollDown {
-  position: sticky;
+  position: fixed;
   top: 88px;
   height: auto;
   z-index: 1000;
@@ -629,6 +629,15 @@ input.success {
   z-index: unset;
 }
 
+/* PC */
+/* PC low resolution */
+/* Tablet */
+/* Phone */
+@media (max-width: 576px) {
+  .mobile-filter.body__filter {
+    top: 650px;
+  }
+}
 .footer {
   background-color: #f6e9d5;
   color: #0c163b;
