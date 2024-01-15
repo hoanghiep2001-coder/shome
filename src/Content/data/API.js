@@ -2051,7 +2051,7 @@ const APIs = {
     outstandingArea: [
       {
         id: 1,
-        path: "https://znews-photo.zingcdn.me/w660/Uploaded/lce_qjlcv/2022_10_09/nga_tu_so_HQ_zing.jpg",
+        path: "https://kenh14cdn.com/thumb_w/660/203336854389633024/2023/8/23/bkhn-5311-1628675972-5169-1629-2482-9681-1682084863-168984116838482746801-173523-1692796267754878789684.jpg",
         title: "Bách Kinh Xây",
         description: "9411 tin trọ"
       },
@@ -2069,7 +2069,7 @@ const APIs = {
       },
       {
         id: 4,
-        path: "https://cdn.reatimes.vn/mediav2/media_old/media/uploaded/25/2018/01/20/quan-Long-Bien-se-co-kich-ban-tuong-tu-voi-Thu-Thiem-1.jpg",
+        path: "https://toquoc.mediacdn.vn/280518851207290880/2023/11/7/cau-long-bien-16993444014831096775895.jpg",
         title: "Long Biên",
         description: "570 tin trọ"
       },

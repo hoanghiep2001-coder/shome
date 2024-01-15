@@ -546,16 +546,17 @@
     .mobile-filter {
       &.body__filter {
           top: 650px;
+          width: 95%;
         }
-        // &.is-scrollDown {
-        //     position: sticky;
-        //     top: 88px;
-        //     height: auto;
-        //     z-index: 1000;
-        //     left: 0;
-        //     transform: unset;
-        //     background-color: rgba(255, 255, 255, 0.85);
-        // }
+        &.is-scrollDown {
+            position: sticky;
+            top: 88px;
+            height: auto;
+            z-index: 1000;
+            left: 50% !important; 
+            transform: translateX(-50%) !important;
+            background-color: rgba(255, 255, 255, 0.85);
+        }
     }
 }
 
