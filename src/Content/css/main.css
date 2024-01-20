@@ -217,8 +217,6 @@ input.success {
   top: 88px;
   height: auto;
   z-index: 1000;
-  left: 0;
-  transform: unset;
   background-color: rgba(255, 255, 255, 0.85);
 }
 .body .body__filter.is-scrollDown .body__filter-form {
