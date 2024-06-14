@@ -54,7 +54,7 @@ function Filter(props) {
 
       {/* ---- PC Filter */}
       {context.webResponsiveStyle !== "is-phone" && (
-        <form
+        <div
           action=""
           method="POST"
           className={cb("body__filter-form", "d-lg-flex", "justify-content-center", "align-items-center")}
@@ -109,7 +109,7 @@ function Filter(props) {
               Tìm kiếm
             </Button>
           </ul>
-        </form>
+        </div>
       )}
 
     </div>

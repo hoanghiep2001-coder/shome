@@ -45,7 +45,7 @@ function Details() {
                                     </div>
                                     <div className={cb("nav_Right")}>
                                         <Nav.Link className={cb("nav_Text")} href="#">{result.price} <span className={cb("nav_Span")}>/tháng</span></Nav.Link>
-                                        <Nav.Link className={cb("nav_Text", "nav_Button")} href="#">ĐẶT LỊCH XEM PHÒNG</Nav.Link>
+                                        <Nav.Link className={cb("nav_Text", "nav_Button")} href="https://www.facebook.com/house.coca.2022/">ĐẶT LỊCH XEM PHÒNG</Nav.Link>
                                     </div>
                                 </Nav>
                             </Container>
@@ -78,6 +78,7 @@ function Details() {
                                     </ListGroup.Item>
                                 </ListGroup>
                             </Card>
+                            
                         </Col>
                         <Col xl={3} className="">
                             <Card

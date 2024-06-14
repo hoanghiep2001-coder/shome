@@ -8,6 +8,8 @@ import classnames from "classnames/bind";
 import styles from "./Nav.module.scss";
 import { Shome_Context } from "../../../../provider/ShomeContext";
 const cb = classnames.bind(styles);
+
+
 function Navigation() {
   const context = useContext(Shome_Context);
   const [modalShow, setModalShow] = useState(false);
@@ -26,6 +28,7 @@ function Navigation() {
   return (
     <>
       <div className={cb("d-flex", "align-items-center", "mobile_container")}>
+        {/* pc */}
         {context.webResponsiveStyle !== "is-phone" && (
           <>
             <ul className="nav">
@@ -65,6 +68,8 @@ function Navigation() {
             </div>
           </>
         )}
+
+        {/* phone */}
         {context.webResponsiveStyle === "is-phone" && (
           <>
             <FaBars fontSize={30} onClick={handleShow} />
@@ -134,6 +139,8 @@ function Navigation() {
           </>
         )}
       </div>
+
+
       <Account show={modalShow} onHide={() => setModalShow(false)} />
     </>
   );

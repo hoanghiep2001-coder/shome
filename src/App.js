@@ -4,9 +4,12 @@ import FilterPage from "./pages/Filter";
 import Home from "./pages/Home";
 import Details from "./pages/Details/details";
 
+
+
 import { Helmet } from 'react-helmet';
 import logo from "../src/Content/image/thumb/LOGO2_fix.png";
 import ScrollToTop from "./components/ScrollToTop/scrollToTop";
+import FixService from "./pages/FixService/fixService";
 
 
 function App() {
@@ -24,6 +27,7 @@ function App() {
             <Route path="/" element={<Home />}></Route>
             <Route path="/filter" element={<FilterPage />}></Route>
             <Route path="/details" element={<Details />}></Route>
+            <Route path="/fixService" element={<FixService />}></Route>
           </Routes>
         </div>
       </Router>

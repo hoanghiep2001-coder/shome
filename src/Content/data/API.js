@@ -16,7 +16,8 @@ const APIs = {
           {
             id: 3,
             content: "Dịch Vụ Sửa Chữa",
-            path: "#",
+            elementType: "a",
+            path: "fixService",
           },
         ],
         UserActions: [
@@ -102,13 +103,23 @@ const APIs = {
         dropDown: [
           {
             id: 1,
-            content: "asdsadasdsadasdsadsadasdasdasdasdsdsd",
+            content: "Vĩnh Tuy",
             fakeId: 16,
           },
           {
-            id: 1,
+            id: 2,
             content: "Hoàng Mai",
             fakeId: 17,
+          },
+          {
+            id: 3,
+            content: "Tân Mai",
+            fakeId: 18,
+          },
+          {
+            id: 4,
+            content: "Lĩnh Nam",
+            fakeId: 19,
           },
         ],
       },
@@ -2046,6 +2057,92 @@ const APIs = {
             content: "Phòng trọ phù hợp dành cho các bạn sinh viên, người đi làm."
           },
         ]
+      },
+    ],
+    fixServiceList: [
+      {
+        id: 1,
+        place: "Hà Nội",
+        title: "Anh Khang Điện Lạnh",
+        rating: 3.2,
+        address: "Ngõ 38, Dịch Vọng Hậu, Cầu Giấy, Hà Nội",
+        price: "0đ",
+        images: [
+          {
+            path: "https://suachuanhahanoi.vn/wp-content/uploads/2019/09/icon-tho-sua-chua-1.jpg",
+          },
+          {
+            path: "https://file4.batdongsan.com.vn/resize/745x510/2022/02/28/20220228110557-0c0e_wm.jpg",
+          },
+          {
+            path: "https://thesaigontimes.vn/wp-content/uploads/2022/08/chungcu4.jpg",
+          },
+        ],
+        link: "#",
+        data_id: 1,
+      },
+      {
+        id: 2,
+        place: "Hà Nội",
+        title: "Anh Trí Nội Thất",
+        rating: 4,
+        address: "121 Lĩnh Nam",
+        price: "0đ",
+        images: [
+          {
+            path: "https://png.pngtree.com/png-clipart/20210128/ourmid/pngtree-car-repair-worker-png-image_2811996.jpg",
+          },
+          {
+            path: "https://file4.batdongsan.com.vn/resize/745x510/2022/02/28/20220228110557-0c0e_wm.jpg",
+          },
+          {
+            path: "https://thesaigontimes.vn/wp-content/uploads/2022/08/chungcu4.jpg",
+          },
+        ],
+        link: "#",
+        data_id: 2,
+      },
+      {
+        id: 3,
+        place: "Hà Nội",
+        title: "Anh Hoàng Máy Giặt",
+        rating: 5,
+        address: "423 Trương Định",
+        price: "0đ",
+        images: [
+          {
+            path: "https://khothietke.net/wp-content/uploads/2021/03/taive-freepng-02062-tho-sua-chua-1-255x300.png",
+          },
+          {
+            path: "https://file4.batdongsan.com.vn/resize/745x510/2022/02/28/20220228110557-0c0e_wm.jpg",
+          },
+          {
+            path: "https://thesaigontimes.vn/wp-content/uploads/2022/08/chungcu4.jpg",
+          },
+        ],
+        link: "#",
+        data_id: 3,
+      },
+      {
+        id: 4,
+        place: "Hà Nội",
+        title: "Anh Hiệp Thiết Bị",
+        rating: 3.5,
+        address: "48 Tân Mai",
+        price: "0đ",
+        images: [
+          {
+            path: "https://png.pngtree.com/element_pic/17/08/17/7d88c32e032382d75fe0299f616093b7.jpg",
+          },
+          {
+            path: "https://file4.batdongsan.com.vn/resize/745x510/2022/02/28/20220228110557-0c0e_wm.jpg",
+          },
+          {
+            path: "https://thesaigontimes.vn/wp-content/uploads/2022/08/chungcu4.jpg",
+          },
+        ],
+        link: "#",
+        data_id: 4,
       },
     ],
     outstandingArea: [
